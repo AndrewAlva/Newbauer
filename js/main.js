@@ -1,32 +1,36 @@
 $(document).ready(function(){
-	$('.gotonoticias').click(function(event) {
-		window.location.href = "noticias.html";
-	});
+	// LINKS
+		$('.gotonoticias').click(function(event) {
+			window.location.href = "noticias.html";
+		});
 
-	$('.gotoproducts').click(function(event) {
-		window.location.href = "productos.html";
-	});
+		$('.gotoproducts').click(function(event) {
+			window.location.href = "productos.html";
+		});
 
-	$('#linkDistribuidores').click(function() {
-		window.location.href = "distribuidores.html";
-	});
+		$('#linkDistribuidores').click(function() {
+			window.location.href = "distribuidores.html";
+		});
+	// END LINKS
 
-	$('.shiftheight').click(function(event) {
-		$('.outindex').toggleClass('altomenus');
-		$('#subnoticia').toggleClass('suboutindex');
-		$('#subproducto').toggleClass('suboutindex');
-		$('#subpromocion').toggleClass('suboutindex');
-		$('.barrafinal').toggleClass('bfoutindex');
-		$('.footprint').toggleClass('fpoutindex');
-		$('.bfincontact').toggleClass('openbfincontact');
-		$('.fpincontact').toggleClass('openfpincontact');
+	// FOOTER HEIGHT ANIMATION
+		$('.shiftheight').click(function(event) {
+			$('.outindex').toggleClass('altomenus');
+			$('#subnoticia').toggleClass('suboutindex');
+			$('#subproducto').toggleClass('suboutindex');
+			$('#subpromocion').toggleClass('suboutindex');
+			$('.barrafinal').toggleClass('bfoutindex');
+			$('.footprint').toggleClass('fpoutindex');
+			$('.bfincontact').toggleClass('openbfincontact');
+			$('.fpincontact').toggleClass('openfpincontact');
 
-		// double thinking
-		$('.inProducts').toggleClass('altomenus');
-		$('.barraFinalProducts').toggleClass('bfinProducts');
-		$('.productsFootPrint').toggleClass('fpinProducts');
+			// double thinking
+			$('.inProducts').toggleClass('altomenus');
+			$('.barraFinalProducts').toggleClass('bfinProducts');
+			$('.productsFootPrint').toggleClass('fpinProducts');
 
-	});
+		});
+	// END FOOTER HEIGHT ANIMATION
 
 	
 

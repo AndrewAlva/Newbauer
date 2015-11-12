@@ -162,220 +162,231 @@ textarea {
     src: url(../fonts/FlorenExpBol.ttf); 
 }
 
-body{
-    background-color: #000000;
-}
+/*/////////////// MAIN WRAPPERS STYLE ///////////////////*/
+    body{
+        background-color: #000000;
+    }
 
-#fullwrapper{
-    width: 100%;
-    height: 100%;
-}
+    #fullwrapper{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 
-#wrapper{
-   /* width: 1024px;*/
-    width: 900px;
-    height: 768px;
+    #wrapper{
+        position: absolute;
+        width: 900px;
+        height: 768px;
+            /* ==========================================================================
+
+        background-color: gray;
+
+       ========================================================================== */
+        margin: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+/*/////////////// END MAIN WRAPPERS STYLE ///////////////*/
+
+/*/////////////// HEADER STYLE ///////////////////*/
+    .header-menu{
+        background-image: url(../img/bg-gradient.png);
+        position: absolute;
+        width: 876px;
+        height: 102px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 30px;
+    }
+
+    .header-menu a{
+        text-decoration: none;
+        color: #fff;
+        display: block;
+    }
+
+    .mnbtn:hover {
+        background-image: url(../img/pressed-menu.svg);
+        background-position: center;
+    }
+
+    .header-menu ul{
+        margin-top: 36px;
+    }
+    .header-menu li{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: FlorensReg;
+        font-size: 11px;
+        color: #fff;
+        width: 95px;
+        height: 38px;
+        line-height: 32px;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .header-logo {
+        position: relative;
+        width: 210px !important;
+        height: 53px !important;
+        top: -5px;
+        margin-right: 2px !important;
+        margin-left: 2px !important;
+    }
+
+    .pressed-menu{
+        background-image: url(../img/pressed-menu.svg);
+        background-position: center;
+    }
+
+    .dotline{
+        margin-top: -10px;
+    }
+/*/////////////// END HEADER STYLE ///////////////*/
+
+
+/*/////////////// HOME STYLE ///////////////*/
+    .container{
+        position: absolute;
+        width: 876px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 170px;
+    }
+
+    .lines{
+        position: absolute;
+        height: 22px;
+        line-height: 22px;
+        font-family: FlorensExpBol;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding-left: 23px;
+
+        z-index: 10;
+    }
+
+    .line0{
+        width: 350px;
+        background-color: rgba(142,196,75,0.8);
+        margin-top: 108px;
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .line1{
+        width: 232px;
+        background-image: url(../img/line1-bg.svg);
+        margin-top: 130px;
+        color: #fff;
+    }
+
+    #homeTagLine-4 .line1{
+        width: 312px !important;
+    }
+
+    .line2{
+        width: 215px;
+        background-color: #000;
+        margin-top: 152px;
+        color: #cdcfcf;
+    }
+
+    #homeTagLine-4 .line2, #homeTagLine-5 .line2 {
+        width: 295px !important;
+    }
+
+    .imgwindow{
+        position: relative;
+        width: 876px;
+        height: 293px;
+        overflow: scroll;
         /* ==========================================================================
+        FINISH THE HOME SCROLL!!!
+       ========================================================================== */
+        z-index: 1;
+        display: inline-block;
+    }
 
-    background-color: gray;
+    .gotoproducts, .gotonoticias{
+        cursor: pointer;
+    }
 
-   ========================================================================== */
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-.header-menu{
-    background-image: url(../img/bg-gradient.png);
-    position: absolute;
-    width: 876px;
-    height: 102px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    margin-top: 54px;
-}
-
-.header-menu a{
-    text-decoration: none;
-    color: #fff;
-    display: block;
-}
-
-.mnbtn:hover {
-    background-image: url(../img/pressed-menu.svg);
-    background-position: center;
-}
-
-.header-menu ul{
-    margin-top: 36px;
-}
-.header-menu li{
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: FlorensReg;
-    font-size: 11px;
-    color: #fff;
-    width: 95px;
-    height: 38px;
-    line-height: 32px;
-    text-align: center;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.header-logo {
-    position: relative;
-    width: 210px !important;
-    height: 53px !important;
-    top: -5px;
-    margin-right: 2px !important;
-    margin-left: 2px !important;
-}
-
-.pressed-menu{
-    background-image: url(../img/pressed-menu.svg);
-    background-position: center;
-}
-
-.dotline{
-    margin-top: -10px;
-}
-
-.container{
-    position: absolute;
-    width: 876px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    margin-top: 170px;
-}
-
-.lines{
-    position: absolute;
-    height: 22px;
-    line-height: 22px;
-    font-family: FlorensExpBol;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding-left: 23px;
-
-    z-index: 10;
-}
-
-.line0{
-    width: 350px;
-    background-color: rgba(142,196,75,0.8);
-    margin-top: 108px;
-    color: #fff;
-    font-size: 15px;
-}
-
-.line1{
-    width: 232px;
-    background-image: url(../img/line1-bg.svg);
-    margin-top: 130px;
-    color: #fff;
-}
-
-#homeTagLine-4 .line1{
-    width: 312px !important;
-}
-
-.line2{
-    width: 215px;
-    background-color: #000;
-    margin-top: 152px;
-    color: #cdcfcf;
-}
-
-#homeTagLine-4 .line2, #homeTagLine-5 .line2 {
-    width: 295px !important;
-}
-
-.imgwindow{
-    position: relative;
-    width: 876px;
-    height: 293px;
-    overflow: scroll;
     /* ==========================================================================
-    FINISH THE HOME SCROLL!!!
-   ========================================================================== */
-    z-index: 1;
-    display: inline-block;
-}
+        SLIDER INIT
+       ========================================================================== */
 
-.gotoproducts, .gotonoticias{
-    cursor: pointer;
-}
+    /*#slider {
+        height:400px;
+        width:650px;
+        margin: 50px auto;
+        position:relative;
+        border-radius:4px;
+        overflow:hidden;
+    }*/
 
-/* ==========================================================================
-    SLIDER INIT
-   ========================================================================== */
+    /*#image {
+        height:293px;
+        width:876px;
+        position:absolute;
+    }*/
 
-/*#slider {
-    height:400px;
-    width:650px;
-    margin: 50px auto;
-    position:relative;
-    border-radius:4px;
-    overflow:hidden;
-}*/
+    /* ==========================================================================
+        SLIDER FIN
+       ========================================================================== */
 
-/*#image {
-    height:293px;
-    width:876px;
-    position:absolute;
-}*/
+    .homeimages{
+        width: 4400px;
+        height: 293px;
+    }
 
-/* ==========================================================================
-    SLIDER FIN
-   ========================================================================== */
+    .inimage{
+        width: 876px;
+        height: 293px;
+        float: right;
+    }
 
-.homeimages{
-    width: 4400px;
-    height: 293px;
-}
+    .switch ul{
+        position: relative;
+        width: 95px;
+        height: 14px;
+        background-image: url(../img/switch-bg.svg);
+        float: right;
+        padding-left: 10px;
+        margin-top: -23px;
+        margin-bottom: -10px;
+        z-index: 99;
+    }
 
-.inimage{
-    width: 876px;
-    height: 293px;
-    float: right;
-}
+    .switch li{
+        display: inline-block;
+        margin-top: -9px;
+        vertical-align: middle;
+        font-size: 9px;
+        font-family: FlorensReg;
+        color: #fff;
+    }
 
-.switch ul{
-    position: relative;
-    width: 95px;
-    height: 14px;
-    background-image: url(../img/switch-bg.svg);
-    float: right;
-    padding-left: 10px;
-    margin-top: -23px;
-    margin-bottom: -10px;
-    z-index: 99;
-}
-
-.switch li{
-    display: inline-block;
-    margin-top: -9px;
-    vertical-align: middle;
-    font-size: 9px;
-    font-family: FlorensReg;
-    color: #fff;
-}
-
-.switch li:hover{
-    color: #8ec44b;
-}
+    .switch li:hover{
+        color: #8ec44b;
+    }
 
 
-.switch span{
-    cursor: pointer;
-}
+    .switch span{
+        cursor: pointer;
+    }
+/*/////////////// END HOME STYLE ///////////////*/
+
+
+
+
 
 .leftboxnos{
     position: absolute;
@@ -517,442 +528,12 @@ body{
 
 
 
-/* ==========================================================================
-   NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES
-   ========================================================================== */
-.outindex{
-    position: absolute;
-    margin: auto;
-    top: 700px;
-    right: 0;
-    left: 0;
-    height: 30px;
-
-    -webkit-transition: height 0.8s; /* Safari */
-    transition: height 0.8s;
-    transition-timing-function: ease;
-    -webkit-transition-timing-function: ease;
-}
-
-.incontact{
-    top: 800px;
-}
-
-.altomenus{
-    height: 230px !important;
-}
-
-.inindex{
-    position: relative;
-    height: 230px;
-    margin: auto;
-    right: 0;
-    left: 0;
-}
-
-.downwrapper{
-    width: 879px;
-    overflow: hidden;
-}
-
-.downboxes {
-    position: absolute;
-    width: 290px;
-    height: 210px;
-    background-color: black;
-    display: inline-block;
-    font-family: FlorensReg;
-    font-size: 10px;
-
-}
-
-.subtitles {
-    position: relative;
-    width: 275px;
-    height: 26px;
-    background-image: url(../img/subtitle-bg.svg);
-    color: #fff;
-    text-transform: uppercase;
-    padding-left: 15px;
-    line-height: 26px;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-
-.subtitles:hover{
-    color: #8ec44b !important;
-}
-
-.suboutindex{
-    opacity: 0.4;
-}
-
-.suboutindex:hover{
-    opacity: 1;
-}
-
-.swift{
-    opacity: 0.4;
-}
-
-.downboxes h5{
-    text-transform: uppercase;
-    color: #4d4d4d;
-    padding-left: 15px;
-    margin-bottom: 0;
-    margin-top: 4px;
-}
-
-.downboxes p{
-    color: #fff;
-    padding-left: 10px;
-    text-align: justify;
-    width: 250px;
-    margin-bottom: 0;
-    margin-top: 0;
-
-    float: left;
-
-}
-
-.destacados{
-    margin-left: 294px;
-}
-
-.destacados p{
-    width: 140px;
-}
-
-.third-box-text{
-    color: #fff;
-    padding-left: 10px;
-    text-align: justify;
-    width: 250px;
-    margin-bottom: 0;
-    margin-top: 0; 
-    height: 40px;
-    overflow: scroll;
-    cursor: pointer;
-}
-
-.third-box-text:hover{
-    color: #8ec44b;
-}
-
-.mid-box-text{
-    width: 140px !important;
-    height: 72px;
-    overflow: scroll;
-    color: #fff;
-    padding-left: 10px;
-    text-align: justify;
-    width: 250px;
-    margin-bottom: 0;
-    margin-top: 0;
-    word-break:break-all;
-}
-
-.mid-box-text:hover{
-    color: #8ec44b;
-}
-
-.mid-prod{
-    height: 87px;
-    margin-bottom: 18px;
-}
-
-.promos{
-    margin-left: 588px;
-}
-
-.promos p{
-    width: 140px;
-    height: 178px;
-    overflow: scroll;
-}
-
-.downboxes img{
-    margin-top: 1px; 
-}
-
-.tanque{
-    height: 78px;
-    position: absolute;
-    margin-left: 190px;
-    margin-top: -81px !important;
-}
-
-.tanque2{
-    height: 78px;
-    position: absolute;
-    margin-left: 190px;
-    margin-top: -78px !important;
-}
-
-.tanque3{
-    position: absolute;
-    float: left;
-    margin-left: 10px;
-    margin-top: -9px !important;
-}
-
-.corner {
-    position: relative;
-    margin-top: -22px !important;
-    margin-right: 14px;
-    float: right;
-}
-
-.corner2{
-    position: relative;
-    margin-top: -19px !important;
-    margin-right: 14px;
-    float: right;
-}
-
-.corner3 {
-    position: relative;
-    margin-top: 160px !important;
-    margin-right: 4px;
-    float: right;
-}
-
-.news-on-news{
-    bottom: 0;
-    height: 28px;
-    overflow: hidden;
-    opacity: 0.4;
-}
-
-.news-on-news:hover{
-    opacity: 1;
-}
-
-/*.downwrapper on news*/
-.dw-on-news{
-    height: 550px !important;
-}
-
-.midbox-news{
-    position: absolute;
-    z-index: 10;
-    width: 289px;
-    height: 500px;
-    margin-left: 295px;
-    font-family: FlorensReg;
-    overflow: hidden;
-}
-
-.noticia h1{
-    position: absolute;
-    background-color: #8ec44b;
-    width: 189px;
-    height: 37px;
-    line-height: 37px;
-    margin-top: 58px;
-    padding-left: 25px;
-    font-size: 22px;
-    text-transform: uppercase;
-    color: #fff;
-    letter-spacing: 2px;
-}
-
-.noticia h2{
-    position: absolute;
-    background-color: #3d3d3d;
-    width: 289px;
-    height: 30px;
-    line-height: 30px;
-    letter-spacing: 1.5px;
-    margin-top: 95px;
-    padding-left: 25px;
-    color:#fff;
-    font-size: 12px;
-    text-transform: uppercase;
-
-}
-
-.noticia p{
-    position: absolute;
-    width: 289px;
-    height: 370px;
-    overflow: scroll;
-    font-size: 12px;
-    color: #fff;
-    margin-top: 135px;
-}
-
-
-#noticia2, #noticia3, #noticia4, #noticia5, #noticia6, #noticia7{
-    display: none;
-}
-
-#pho-noti2, #pho-noti3, #pho-noti4, #pho-noti5, #pho-noti6, #pho-noti7{
-    display: none;
-}
-
-.rightbox-news{
-    position: absolute;
-    margin-left: 589px;
-}
-
-
-/* ==========================================================================
-   PRODUCTOS
-   ========================================================================== */
-.products-wrapper{
-    width: 876px;
-    height: 611px;
-    margin-bottom: 30px;
-}
-
-.col-products{
-    width: 288px;
-    height: 427px;
-    float: left;
-}
-
-.col-description{
-    width: 288px;
-    height: 427px;
-
-    float: left;
-    margin-left: 6px;
-    margin-right: 6px;
-}
-
-.col-photo{
-    width: 288px;
-    height: 427px;
-
-    float: left;
-}
-
-.title-products{
-    font-family: FlorensReg;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 18pt;
-    height: 51px;
-    line-height: 51px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-left: 25px;
-    
-    background-color: #8ec44b;
-    
-}
-
-.block-products{
-    height: 37px;
-    line-height: 37px;
-    margin-bottom: 10px;
-    background-color: #3d3d3d;
-    font-family: FlorensReg;
-    text-transform: uppercase;
-    color: #656565;
-    font-size: 8pt;
-    padding-left: 25px;
-    cursor: pointer;
-
-}
-
-.block-products:hover{
-    color: #8ec44b;
-}
-
-.prod-act{
-    color: #fff !important;
-
-}
-
-.sub-title{
-    height: 37px;
-    line-height: 37px;
-    background-color: #8ec44b;
-    margin-top: 61px;
-    margin-bottom: 10px;
-    padding-left: 12px;
-    font-family: FlorensReg;
-    font-size: 10pt;
-    text-transform: uppercase;
-    color: #fff;
-}
-
-.sub-text{
-    font-family: FlorensReg;
-    font-size: 9pt;
-    color: #fff;
-    text-align: justify;
-    margin-bottom: 46px;
-}
-
-.sub-download{
-    width: 276px;
-    height: 84px;
-    line-height: 84px;
-    padding-left: 12px;
-    font-family: FlorensReg;
-    font-size: 10pt;
-    text-transform: uppercase;
-    background-color: #8ec44b;
-    position: absolute;
-    bottom: 30px;
-    
-}
-
-.sub-download a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-
-.sub-download a:hover{
-    color: #637f32;
-}
-
-.mailInfo{
-    width: 276px;
-    height: 37px;
-    line-height: 37px;
-    padding-left: 12px;
-    font-family: FlorensReg;
-    font-size: 10pt;
-    text-transform: uppercase;
-    background-color: #8ec44b;
-    position: absolute;
-    bottom: 124px;
-    
-}
-
-.mailInfo a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-}
-
-.mailInfo a:hover{
-    color: #637f32;
-}
-
-#prod-fmonopotasico, #prod-ndeamonio, #prod-ndecalcio, #prod-ndemagnesio, #prod-ndepotasio, #prod-ndezinc, #prod-uan32{
-    display: none;
-}
-
-#pho-fmonopotasico, #pho-ndeamonio, #pho-ndecalcio, #pho-ndemagnesio, #pho-ndepotasio, #pho-ndezinc, #pho-uan32{
-    display: none;
-}
-
-
-
-/* ==========================================================================
-   PRODUCTOS NEW DESIGN
-   ========================================================================== */
-    .inProducts{
+/* ==========  FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES)
+========================================================================== */
+    .outindex{
         position: absolute;
         margin: auto;
-        top: 800px;
+        top: 700px;
         right: 0;
         left: 0;
         height: 30px;
@@ -963,599 +544,1033 @@ body{
         -webkit-transition-timing-function: ease;
     }
 
-    .barraFinalProducts{
-        position: absolute;
-        width: 876px;
-        height: 26px;
-        line-height: 26px;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 9px;
-        font-family: FlorensReg;
-        color: #fff;
-        margin: auto;
-        top: 835px;
-        left: 0;
-        right: 0;
-        background-image: url(../img/subtitle-bg.svg);
-        -webkit-transition: top 0.8s; /* Safari */
-        transition: top 0.8s;
-        transition-timing-function: ease;
-        -webkit-transition-timing-function: ease;
+    .incontact{
+        top: 800px;
     }
 
-    .productsFootPrint{
+    .altomenus{
+        height: 230px !important;
+    }
+
+    .inindex{
+        position: relative;
+        height: 230px;
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
+
+    .downwrapper{
+        width: 879px;
+        overflow: hidden;
+    }
+
+    .downboxes {
         position: absolute;
-        width: 876px;
+        width: 290px;
+        height: 210px;
+        background-color: black;
+        display: inline-block;
+        font-family: FlorensReg;
+        font-size: 10px;
+
+    }
+
+    .subtitles {
+        position: relative;
+        width: 275px;
+        height: 26px;
+        background-image: url(../img/subtitle-bg.svg);
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 15px;
+        line-height: 26px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+
+    .subtitles:hover{
+        color: #8ec44b !important;
+    }
+
+    .suboutindex{
+        opacity: 0.4;
+    }
+
+    .suboutindex:hover{
+        opacity: 1;
+    }
+
+    .swift{
+        opacity: 0.4;
+    }
+
+    .downboxes h5{
+        text-transform: uppercase;
+        color: #4d4d4d;
+        padding-left: 15px;
+        margin-bottom: 0;
+        margin-top: 4px;
+    }
+
+    .downboxes p{
+        color: #fff;
+        padding-left: 10px;
+        text-align: justify;
+        width: 250px;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        float: left;
+
+    }
+
+    .destacados{
+        margin-left: 294px;
+    }
+
+    .destacados p{
+        width: 140px;
+    }
+
+    .third-box-text{
+        color: #fff;
+        padding-left: 10px;
+        text-align: justify;
+        width: 250px;
+        margin-bottom: 0;
+        margin-top: 0; 
+        height: 40px;
+        overflow: scroll;
+        cursor: pointer;
+    }
+
+    .third-box-text:hover{
+        color: #8ec44b;
+    }
+
+    .mid-box-text{
+        width: 140px !important;
+        height: 72px;
+        overflow: scroll;
+        color: #fff;
+        padding-left: 10px;
+        text-align: justify;
+        width: 250px;
+        margin-bottom: 0;
+        margin-top: 0;
+        word-break:break-all;
+    }
+
+    .mid-box-text:hover{
+        color: #8ec44b;
+    }
+
+    .mid-prod{
+        height: 87px;
+        margin-bottom: 18px;
+    }
+
+    .promos{
+        margin-left: 588px;
+    }
+
+    .promos p{
+        width: 140px;
+        height: 178px;
+        overflow: scroll;
+    }
+
+    .downboxes img{
+        margin-top: 1px; 
+    }
+
+    .tanque{
+        height: 78px;
+        position: absolute;
+        margin-left: 190px;
+        margin-top: -81px !important;
+    }
+
+    .tanque2{
+        height: 78px;
+        position: absolute;
+        margin-left: 190px;
+        margin-top: -78px !important;
+    }
+
+    .tanque3{
+        position: absolute;
+        float: left;
+        margin-left: 10px;
+        margin-top: -9px !important;
+    }
+
+    .corner {
+        position: relative;
+        margin-top: -22px !important;
+        margin-right: 14px;
+        float: right;
+    }
+
+    .corner2{
+        position: relative;
+        margin-top: -19px !important;
+        margin-right: 14px;
+        float: right;
+    }
+
+    .corner3 {
+        position: relative;
+        margin-top: 160px !important;
+        margin-right: 4px;
+        float: right;
+    }
+
+    .news-on-news{
+        bottom: 0;
+        height: 28px;
+        overflow: hidden;
+        opacity: 0.4;
+    }
+
+    .news-on-news:hover{
+        opacity: 1;
+    }
+
+    /*.downwrapper on news*/
+    .dw-on-news{
+        height: 550px !important;
+    }
+
+    .midbox-news{
+        position: absolute;
+        z-index: 10;
+        width: 289px;
+        height: 500px;
+        margin-left: 295px;
+        font-family: FlorensReg;
+        overflow: hidden;
+    }
+
+    .noticia h1{
+        position: absolute;
+        background-color: #8ec44b;
+        width: 189px;
+        height: 37px;
+        line-height: 37px;
+        margin-top: 58px;
+        padding-left: 25px;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+
+    .noticia h2{
+        position: absolute;
+        background-color: #3d3d3d;
+        width: 289px;
         height: 30px;
         line-height: 30px;
+        letter-spacing: 1.5px;
+        margin-top: 95px;
+        padding-left: 25px;
+        color:#fff;
+        font-size: 12px;
         text-transform: uppercase;
-        font-size: 8px;
-        font-family: FlorensBol;
-        text-align: right;
-        margin: auto;
-        left: 0;
-        right: 0;
-        top: 865px;
+
+    }
+
+    .noticia p{
+        position: absolute;
+        width: 289px;
+        height: 370px;
+        overflow: scroll;
+        font-size: 12px;
         color: #fff;
-        margin-bottom: 30px;
-        -webkit-transition: top 0.8s; /* Safari */
-        transition: top 0.8s;
-        transition-timing-function: ease;
-        -webkit-transition-timing-function: ease;
+        margin-top: 135px;
     }
 
-    #bidonesBG{
+
+    #noticia2, #noticia3, #noticia4, #noticia5, #noticia6, #noticia7{
+        display: none;
+    }
+
+    #pho-noti2, #pho-noti3, #pho-noti4, #pho-noti5, #pho-noti6, #pho-noti7{
+        display: none;
+    }
+
+    .rightbox-news{
         position: absolute;
-        width: 100%;
-        height: 611px;
+        margin-left: 589px;
     }
 
-        .productsLetterBG{
-            position: absolute;
-            width: 297px;
-            height: 340px;
-            top: 55px;
-            overflow: hidden;
-            left: 0px;
-            opacity: 1;
+/* ==========  END FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES)
+========================================================================== */
 
-            -webkit-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            transition: all 1s ease;
+
+/* =========== PRODUCTOS
+   ========================================================================== */
+        .products-wrapper{
+            width: 876px;
+            height: 611px;
+            margin-bottom: 30px;
         }
 
-            .productsLetterBG h2{
-                font-family: FlorensBol;
-                text-transform: uppercase;
-                font-size: 125px;
-                line-height: 115px;
-                word-wrap: break-word;
-                margin: 0;
-                text-shadow: 5px 5px 1px #000;
-            }
-
-            /*INIT COLOR AND SHADOW PRODUCTS LETTER BG*/
-                #newLetterCalcium h2{
-                    color: #e8c130;
-                }
-
-                #newLetterZinc h2{
-                    color: #ae1039;
-                }
-
-                #newLetter8-24-0 h2{
-                    color: #006abb;
-                }
-
-                #newLetterMKP h2{
-                    color: #be3d24;
-                }
-
-                #newLetterUan32 h2{
-                    color: #445671;
-                }
-
-                #newLetterNS40 h2{
-                    color: #a4a011;
-                }
-
-                #newLetterMagnesium h2{
-                    color: #5a0b79;
-                }
-
-                #newLetterNitratos h2{
-                    color: #4d162c;
-                }
-
-                #newLetterAmmonium h2{
-                    color: #29362e;
-                }
-
-                #newLetterPotasium h2{
-                    color: #cc1660;
-                }
-            /*END COLOR AND SHADOW PRODUCTS LETTER BG*/
-
-        #shadowVignete{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url('../img/product-vignete.png');
-            -ms-background-position-x: -50px;
-            background-position-x: -50px;
-            -ms-background-position-y: -70px;
-            background-position-y: -70px;
-            opacity: 0.7;
+        .col-products{
+            width: 288px;
+            height: 427px;
+            float: left;
         }
 
-    #bidonesInfoWrapper{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
+        .col-description{
+            width: 288px;
+            height: 427px;
 
-        .productsInfo{
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            left: 0px;
-            opacity: 1;
-
-            -webkit-transition: all 1s ease;
-            -o-transition: all 1s ease;
-            transition: all 1s ease;
+            float: left;
+            margin-left: 6px;
+            margin-right: 6px;
         }
 
-            .productsPhoto{
-                position: absolute;
-                width: 210px;
-                height: 300px;
-                top: 80px;
-                left: 112px;
-            }
+        .col-photo{
+            width: 288px;
+            height: 427px;
 
-            .productsInfoWrapper{
-                position: absolute;
-                width: 325px;
-                height: 385px;
-                top: 80px;
-                left: 366px;
-            }
+            float: left;
+        }
 
-                .productsName{
-                    position: relative;
-                    width: 100%;
-                    height: 27px;
-                    margin-bottom: 34px;
-                }
+        .title-products{
+            font-family: FlorensReg;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18pt;
+            height: 51px;
+            line-height: 51px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            padding-left: 25px;
+            
+            background-color: #8ec44b;
+            
+        }
 
-                /*INIT BORDER BOTTOM NAME PRODUCTS*/
-                    #newCalciumInfo .productsName {
-                        border-bottom: 2px solid #e8c130;
-                    }
-
-                    #newZincInfo .productsName {
-                        border-bottom: 2px solid #ae1039;
-                    }
-
-                    #new8-24-0Info .productsName {
-                        border-bottom: 2px solid #006abb;
-                    }
-
-                    #newMKPInfo .productsName {
-                        border-bottom: 2px solid #be3d24;
-                    }
-
-                    #newUan32Info .productsName {
-                        border-bottom: 2px solid #445671;
-                    }
-
-                    #newNS40Info .productsName {
-                        border-bottom: 2px solid #a4a011;
-                    }
-
-                    #newMagnesiumInfo .productsName {
-                        border-bottom: 2px solid #5a0b79;
-                    }
-
-                    #newNitratosInfo .productsName {
-                        border-bottom: 2px solid #4d162c;
-                    }
-
-                    #newAmmoniumInfo .productsName {
-                        border-bottom: 2px solid #29362e;
-                    }
-
-                    #newPotasiumInfo .productsName {
-                        border-bottom: 2px solid #cc1660;
-                    }
-                /*END BORDER BOTTOM NAME PRODUCTS*/
-
-                    .productsName h2{
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        line-height: 27px;
-                        top: 0;
-                        margin: 0;
-                        padding: 0;
-                        color: #fff;
-                        text-transform: uppercase;
-                        font-family: FlorensBol;
-                        font-size: 24px;
-                    }
-
-                .productsDescription{
-                    position: relative;
-                    width: 100%;
-                    height: 282px;
-                    font-family: FlorensReg;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    color: #fff;
-                }
-
-                .productsFicha{
-                    position: absolute;
-                    width: 183px;
-                    height: 40px;
-                    bottom: 0;
-                    cursor: pointer;
-                    text-align: center;
-                    border: 1px solid yellow;
-                }
-
-                /*INIT BORDER FICHAS TÉCNICAS PRODUCTS*/
-                    #newCalciumInfo .productsFicha {
-                        border: 1px solid #e8c130;
-                    }
-
-                    #newZincInfo .productsFicha {
-                        border: 1px solid #ae1039;
-                    }
-
-                    #new8-24-0Info .productsFicha {
-                        border: 1px solid #006abb;
-                    }
-
-                    #newMKPInfo .productsFicha {
-                        border: 1px solid #be3d24;
-                    }
-
-                    #newUan32Info .productsFicha {
-                        border: 1px solid #445671;
-                    }
-
-                    #newNS40InfoInfo .productsFicha {
-                        border: 1px solid #a4a011;
-                    }
-
-                    #newMagnesiumInfo .productsFicha {
-                        border: 1px solid #5a0b79;
-                    }
-
-                    #newNitratosInfo .productsFicha {
-                        border: 1px solid #4d162c;
-                    }
-
-                    #newAmmoniumInfo .productsFicha {
-                        border: 1px solid #29362e;
-                    }
-
-                    #newPotasiumInfo .productsFicha {
-                        border: 1px solid #cc1660;
-                    }
-                /*END BORDER FICHAS TÉCNICAS PRODUCTS*/
-
-                    .productsFicha a{
-                        margin: 0;
-                        font-family: FlorensReg;
-                        color: #fff;
-                        text-transform: uppercase;
-                        font-size: 19px;
-                        line-height: 40px;
-                        text-decoration: none;
-                    }
-
-    #bidonesNavWrapper{
-        position: absolute;
-        width: 35px;
-        height: 350px;
-        top: 80px;
-        right: 0;
-        z-index: 1000000000;
-    }
-
-        .productsNavBars{
-            position: relative;
-            width: 35px;
-            height: 35px;
-            float: right;
-            overflow: hidden;
+        .block-products{
+            height: 37px;
+            line-height: 37px;
+            margin-bottom: 10px;
+            background-color: #3d3d3d;
+            font-family: FlorensReg;
+            text-transform: uppercase;
+            color: #656565;
+            font-size: 8pt;
+            padding-left: 25px;
             cursor: pointer;
 
-            -webkit-transition: all 0.4s ease;
-            -o-transition: all 0.4s ease;
-            transition: all 0.4s ease;
         }
 
-        .productsNavBars:hover{
-            width: 180px !important;
+        .block-products:hover{
+            color: #8ec44b;
         }
 
-            .productBlock{
-                position: absolute;
-                width: 35px;
-                height: 35px;
-                right: 0;
-                z-index: 100;
+        .prod-act{
+            color: #fff !important;
 
-                -webkit-transition: all 0.4s ease-in-out;
-                -o-transition: all 0.4s ease-in-out;
-                transition: all 0.4s ease-in-out;
-            }
+        }
 
-            .currentBlock{
-                -ms-background-position-x: -36px !important;
-                background-position-x: -36px !important;
-            }
+        .sub-title{
+            height: 37px;
+            line-height: 37px;
+            background-color: #8ec44b;
+            margin-top: 61px;
+            margin-bottom: 10px;
+            padding-left: 12px;
+            font-family: FlorensReg;
+            font-size: 10pt;
+            text-transform: uppercase;
+            color: #fff;
+        }
 
-            /*INIT BG PER BLOCK*/
-                #newNavCalcium .productBlock{
-                    background: url('../img/productos/icon_calcium.png');
-                }
+        .sub-text{
+            font-family: FlorensReg;
+            font-size: 9pt;
+            color: #fff;
+            text-align: justify;
+            margin-bottom: 46px;
+        }
 
-                #newNavZinc .productBlock{
-                    background: url('../img/productos/icon_zinc.png');
-                }
+        .sub-download{
+            width: 276px;
+            height: 84px;
+            line-height: 84px;
+            padding-left: 12px;
+            font-family: FlorensReg;
+            font-size: 10pt;
+            text-transform: uppercase;
+            background-color: #8ec44b;
+            position: absolute;
+            bottom: 30px;
+            
+        }
 
-                #newNav8-24-0 .productBlock{
-                    background: url('../img/productos/icon_8-24-0.png');
-                }
+        .sub-download a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
 
-                #newNavMKP .productBlock{
-                    background: url('../img/productos/icon_mkp.png');
-                }
+        .sub-download a:hover{
+            color: #637f32;
+        }
 
-                #newNavUan32 .productBlock{
-                    background: url('../img/productos/icon_uan32.png');
-                }
+        .mailInfo{
+            width: 276px;
+            height: 37px;
+            line-height: 37px;
+            padding-left: 12px;
+            font-family: FlorensReg;
+            font-size: 10pt;
+            text-transform: uppercase;
+            background-color: #8ec44b;
+            position: absolute;
+            bottom: 124px;
+            
+        }
 
-                #newNavNS40 .productBlock{
-                    background: url('../img/productos/icon_ns40.png');
-                }
+        .mailInfo a{
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
 
-                #newNavMagnesium .productBlock{
-                    background: url('../img/productos/icon_magnesium.png');
-                }
+        .mailInfo a:hover{
+            color: #637f32;
+        }
 
-                #newNavNitratos .productBlock{
-                    background: url('../img/productos/icon_nitratos.png');
-                }
+        #prod-fmonopotasico, #prod-ndeamonio, #prod-ndecalcio, #prod-ndemagnesio, #prod-ndepotasio, #prod-ndezinc, #prod-uan32{
+            display: none;
+        }
 
-                #newNavAmmonium .productBlock{
-                    background: url('../img/productos/icon_ammonium.png');
-                }
+        #pho-fmonopotasico, #pho-ndeamonio, #pho-ndecalcio, #pho-ndemagnesio, #pho-ndepotasio, #pho-ndezinc, #pho-uan32{
+            display: none;
+        }
 
-                #newNavPotasium .productBlock{
-                    background: url('../img/productos/icon_potasium.png');
-                }
-            /*END BG PER BLOCK*/
-
-            .productBar{
-                position: absolute;
-                width: 164px;
-                height: 35px;
-                z-index: 10;
-            }
-
-            /*INIT BG PER BAR*/
-                #newNavCalcium .productBar{
-                    background-color: #e8c130;
-                }
-
-                #newNavZinc .productBar{
-                    background-color: #ae1039;
-                }
-
-                #newNav8-24-0 .productBar{
-                    background-color: #006abb;
-                }
-
-                #newNavMKP .productBar{
-                    background-color: #be3d24;
-                }
-
-                #newNavUan32 .productBar{
-                    background-color: #445671;
-                }
-
-                #newNavNS40 .productBar{
-                    background-color: #a4a011;
-                }
-
-                #newNavMagnesium .productBar{
-                    background-color: #5a0b79;
-                }
-
-                #newNavNitratos .productBar{
-                    background-color: #4d162c;
-                }
-
-                #newNavAmmonium .productBar{
-                    background-color: #29362e;
-                }
-
-                #newNavPotasium .productBar{
-                    background-color: #cc1660;
-                }
-
-                
-            /*END BG PER BAR*/
-
-                .productBar h3{
-                    margin: 0;
-                    font-family: FlorensReg;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    line-height: 35px;
-                    color: #fff;
-                    padding-right: 44px;
-                    text-align: right;
-                    text-shadow: 2px 2px 0 rgba(50,50,50,0.3);
-                }
-
-
-
-/* ==========================================================================
-   CONTACTO
+/* =========== END PRODUCTOS
    ========================================================================== */
 
-.leftboxcon{
-    font-family: FlorensReg;
-    position: absolute;
-    width: 291px;
-    height: 455px;
-    margin-top: 67px;
-}
-
-.leftboxcon h1{
-    margin-top: 0;
-    width: 267px;
-    height: 31px;
-    line-height: 31px;
-    font-size: 16px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-left: 24px;
-    background-color: #8ec44b;
-}
-
-.leftboxcon p{
-    font-size: 8pt !important;
-    color: #fff !important;
-    margin-top: -6px !important;
-}
-
-.leftboxcon h2{
-    margin-top: 0;
-    margin-bottom: 15px;
-    width: 147px;
-    height: 24px;
-    line-height: 24px;
-    font-size: 12px;
-    color: #fff;
-    text-transform: uppercase;
-    padding-left: 24px;
-    background-color: #8ec44b;
-}
-
-.formaciondd{
-    width: 267px !important;
-    height: 31px !important;
-    line-height: 31px !important;
-    font-size: 16px !important;
-}
-
-#linkDistribuidores{
-    cursor: pointer;
-}
-
-.midboxcon{
-    position: absolute;
-    width: 246px;
-    height: 45px;
-    margin-top: 67px;
-    margin-left: 311px;
-}
-
-
-.rightboxcon{
-    position: absolute;
-    width: 273px;
-    height: 289px;
-    margin-top: 25px;
-    font-family: FlorensReg;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 12px;
-    right: 24px;
-}
-
-.rightboxcon h2{
-    margin-top: 42px;
-    margin-bottom: 32px;
-    width: 273px;
-    height: 31px;
-    background-color: #8ec44b;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 22px;
-    line-height: 31px;
-    padding-left: 24px;
-}
-
-.rightboxcon input, .rightboxcon textarea{
-    background-color: #313131;
-    border: none;
-    height: 24px;
-    width: 273px;
-    color: #fff;
-    font-family: FlorensReg;
-    font-size: 12px;
-    padding-left: 15px;
-}
-
-.rightboxcon textarea{
-    height: 168px;
-    font-family: FlorensReg;
-    font-size: 12px;
-    padding-left: 15px;
-}
-
-.rightboxcon div{
-    background-color: #8ec44b;
-    text-transform: uppercase;
-    color: #fff;
-    width: 100px;
-    height: 24px;
-    line-height: 24px;
-    font-size: 12px;
-    text-align: center;
-}
-
-.requisitos{
-    background-color: black !important;
-    color: #8ec44b !important;
-}
-
-.contactbtn{
-    width: 90px !important;
-    background-color: #8ec44b !important;
-    font-family: FlorensReg;
-    font-size: 12px;
-    color: #fff;
-    text-transform: uppercase;
-    margin-top: 67px;
-
-}
-
-.contactspace1{
-    margin-top: 800px !important;
-}
-
-.contactspace2{
-    margin-top: 100px !important;
-}
-
-.contactspace3{
-    margin-top: 100px !important;
-}
 
 
 
 
+/* ========== PRODUCTOS NEW DESIGN
+========================================================================== */
+        .inProducts{
+            position: absolute;
+            margin: auto;
+            top: 800px;
+            right: 0;
+            left: 0;
+            height: 30px;
+
+            -webkit-transition: height 0.8s; /* Safari */
+            transition: height 0.8s;
+            transition-timing-function: ease;
+            -webkit-transition-timing-function: ease;
+        }
+
+        .barraFinalProducts{
+            position: absolute;
+            width: 876px;
+            height: 26px;
+            line-height: 26px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 9px;
+            font-family: FlorensReg;
+            color: #fff;
+            margin: auto;
+            top: 835px;
+            left: 0;
+            right: 0;
+            background-image: url(../img/subtitle-bg.svg);
+            -webkit-transition: top 0.8s; /* Safari */
+            transition: top 0.8s;
+            transition-timing-function: ease;
+            -webkit-transition-timing-function: ease;
+        }
+
+        .productsFootPrint{
+            position: absolute;
+            width: 876px;
+            height: 30px;
+            line-height: 30px;
+            text-transform: uppercase;
+            font-size: 8px;
+            font-family: FlorensBol;
+            text-align: right;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 865px;
+            color: #fff;
+            margin-bottom: 30px;
+            -webkit-transition: top 0.8s; /* Safari */
+            transition: top 0.8s;
+            transition-timing-function: ease;
+            -webkit-transition-timing-function: ease;
+        }
+
+        #bidonesBG{
+            position: absolute;
+            width: 100%;
+            height: 611px;
+        }
+
+            .productsLetterBG{
+                position: absolute;
+                width: 297px;
+                height: 340px;
+                top: 55px;
+                overflow: hidden;
+                left: 0px;
+                opacity: 1;
+
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+
+                .productsLetterBG h2{
+                    font-family: FlorensBol;
+                    text-transform: uppercase;
+                    font-size: 125px;
+                    line-height: 115px;
+                    word-wrap: break-word;
+                    margin: 0;
+                    text-shadow: 5px 5px 1px #000;
+                }
+
+                /*INIT COLOR AND SHADOW PRODUCTS LETTER BG*/
+                    #newLetterCalcium h2{
+                        color: #e8c130;
+                    }
+
+                    #newLetterZinc h2{
+                        color: #ae1039;
+                    }
+
+                    #newLetter8-24-0 h2{
+                        color: #006abb;
+                    }
+
+                    #newLetterMKP h2{
+                        color: #be3d24;
+                    }
+
+                    #newLetterUan32 h2{
+                        color: #445671;
+                    }
+
+                    #newLetterNS40 h2{
+                        color: #a4a011;
+                    }
+
+                    #newLetterMagnesium h2{
+                        color: #5a0b79;
+                    }
+
+                    #newLetterNitratos h2{
+                        color: #4d162c;
+                    }
+
+                    #newLetterAmmonium h2{
+                        color: #29362e;
+                    }
+
+                    #newLetterPotasium h2{
+                        color: #cc1660;
+                    }
+                /*END COLOR AND SHADOW PRODUCTS LETTER BG*/
+
+            #shadowVignete{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: url('../img/product-vignete.png');
+                -ms-background-position-x: -50px;
+                background-position-x: -50px;
+                -ms-background-position-y: -70px;
+                background-position-y: -70px;
+                opacity: 0.7;
+            }
+
+        #bidonesInfoWrapper{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+            .productsInfo{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0px;
+                opacity: 1;
+
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                transition: all 1s ease;
+            }
+
+                .productsPhoto{
+                    position: absolute;
+                    width: 210px;
+                    height: 300px;
+                    top: 80px;
+                    left: 112px;
+                }
+
+                .productsInfoWrapper{
+                    position: absolute;
+                    width: 325px;
+                    height: 385px;
+                    top: 80px;
+                    left: 366px;
+                }
+
+                    .productsName{
+                        position: relative;
+                        width: 100%;
+                        height: 27px;
+                        margin-bottom: 34px;
+                    }
+
+                    /*INIT BORDER BOTTOM NAME PRODUCTS*/
+                        #newCalciumInfo .productsName {
+                            border-bottom: 2px solid #e8c130;
+                        }
+
+                        #newZincInfo .productsName {
+                            border-bottom: 2px solid #ae1039;
+                        }
+
+                        #new8-24-0Info .productsName {
+                            border-bottom: 2px solid #006abb;
+                        }
+
+                        #newMKPInfo .productsName {
+                            border-bottom: 2px solid #be3d24;
+                        }
+
+                        #newUan32Info .productsName {
+                            border-bottom: 2px solid #445671;
+                        }
+
+                        #newNS40Info .productsName {
+                            border-bottom: 2px solid #a4a011;
+                        }
+
+                        #newMagnesiumInfo .productsName {
+                            border-bottom: 2px solid #5a0b79;
+                        }
+
+                        #newNitratosInfo .productsName {
+                            border-bottom: 2px solid #4d162c;
+                        }
+
+                        #newAmmoniumInfo .productsName {
+                            border-bottom: 2px solid #29362e;
+                        }
+
+                        #newPotasiumInfo .productsName {
+                            border-bottom: 2px solid #cc1660;
+                        }
+                    /*END BORDER BOTTOM NAME PRODUCTS*/
+
+                        .productsName h2{
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            line-height: 27px;
+                            top: 0;
+                            margin: 0;
+                            padding: 0;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-family: FlorensBol;
+                            font-size: 24px;
+                        }
+
+                    .productsDescription{
+                        position: relative;
+                        width: 100%;
+                        height: 282px;
+                        font-family: FlorensReg;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        color: #fff;
+                    }
+
+                    .productsFicha{
+                        position: absolute;
+                        width: 183px;
+                        height: 40px;
+                        bottom: 0;
+                        cursor: pointer;
+                        text-align: center;
+                        border: 1px solid yellow;
+                    }
+
+                    /*INIT BORDER FICHAS TÉCNICAS PRODUCTS*/
+                        #newCalciumInfo .productsFicha {
+                            border: 1px solid #e8c130;
+                        }
+
+                        #newZincInfo .productsFicha {
+                            border: 1px solid #ae1039;
+                        }
+
+                        #new8-24-0Info .productsFicha {
+                            border: 1px solid #006abb;
+                        }
+
+                        #newMKPInfo .productsFicha {
+                            border: 1px solid #be3d24;
+                        }
+
+                        #newUan32Info .productsFicha {
+                            border: 1px solid #445671;
+                        }
+
+                        #newNS40InfoInfo .productsFicha {
+                            border: 1px solid #a4a011;
+                        }
+
+                        #newMagnesiumInfo .productsFicha {
+                            border: 1px solid #5a0b79;
+                        }
+
+                        #newNitratosInfo .productsFicha {
+                            border: 1px solid #4d162c;
+                        }
+
+                        #newAmmoniumInfo .productsFicha {
+                            border: 1px solid #29362e;
+                        }
+
+                        #newPotasiumInfo .productsFicha {
+                            border: 1px solid #cc1660;
+                        }
+                    /*END BORDER FICHAS TÉCNICAS PRODUCTS*/
+
+                        .productsFicha a{
+                            margin: 0;
+                            font-family: FlorensReg;
+                            color: #fff;
+                            text-transform: uppercase;
+                            font-size: 19px;
+                            line-height: 40px;
+                            text-decoration: none;
+                        }
+
+        #bidonesNavWrapper{
+            position: absolute;
+            width: 35px;
+            height: 350px;
+            top: 80px;
+            right: 0;
+            z-index: 1000000000;
+        }
+
+            .productsNavBars{
+                position: relative;
+                width: 35px;
+                height: 35px;
+                float: right;
+                overflow: hidden;
+                cursor: pointer;
+
+                -webkit-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+            }
+
+            .productsNavBars:hover{
+                width: 180px !important;
+            }
+
+                .productBlock{
+                    position: absolute;
+                    width: 35px;
+                    height: 35px;
+                    right: 0;
+                    z-index: 100;
+
+                    -webkit-transition: all 0.4s ease-in-out;
+                    -o-transition: all 0.4s ease-in-out;
+                    transition: all 0.4s ease-in-out;
+                }
+
+                .currentBlock{
+                    -ms-background-position-x: -36px !important;
+                    background-position-x: -36px !important;
+                }
+
+                /*INIT BG PER BLOCK*/
+                    #newNavCalcium .productBlock{
+                        background: url('../img/productos/icon_calcium.png');
+                    }
+
+                    #newNavZinc .productBlock{
+                        background: url('../img/productos/icon_zinc.png');
+                    }
+
+                    #newNav8-24-0 .productBlock{
+                        background: url('../img/productos/icon_8-24-0.png');
+                    }
+
+                    #newNavMKP .productBlock{
+                        background: url('../img/productos/icon_mkp.png');
+                    }
+
+                    #newNavUan32 .productBlock{
+                        background: url('../img/productos/icon_uan32.png');
+                    }
+
+                    #newNavNS40 .productBlock{
+                        background: url('../img/productos/icon_ns40.png');
+                    }
+
+                    #newNavMagnesium .productBlock{
+                        background: url('../img/productos/icon_magnesium.png');
+                    }
+
+                    #newNavNitratos .productBlock{
+                        background: url('../img/productos/icon_nitratos.png');
+                    }
+
+                    #newNavAmmonium .productBlock{
+                        background: url('../img/productos/icon_ammonium.png');
+                    }
+
+                    #newNavPotasium .productBlock{
+                        background: url('../img/productos/icon_potasium.png');
+                    }
+                /*END BG PER BLOCK*/
+
+                .productBar{
+                    position: absolute;
+                    width: 164px;
+                    height: 35px;
+                    z-index: 10;
+                }
+
+                /*INIT BG PER BAR*/
+                    #newNavCalcium .productBar{
+                        background-color: #e8c130;
+                    }
+
+                    #newNavZinc .productBar{
+                        background-color: #ae1039;
+                    }
+
+                    #newNav8-24-0 .productBar{
+                        background-color: #006abb;
+                    }
+
+                    #newNavMKP .productBar{
+                        background-color: #be3d24;
+                    }
+
+                    #newNavUan32 .productBar{
+                        background-color: #445671;
+                    }
+
+                    #newNavNS40 .productBar{
+                        background-color: #a4a011;
+                    }
+
+                    #newNavMagnesium .productBar{
+                        background-color: #5a0b79;
+                    }
+
+                    #newNavNitratos .productBar{
+                        background-color: #4d162c;
+                    }
+
+                    #newNavAmmonium .productBar{
+                        background-color: #29362e;
+                    }
+
+                    #newNavPotasium .productBar{
+                        background-color: #cc1660;
+                    }
+
+                    
+                /*END BG PER BAR*/
+
+                    .productBar h3{
+                        margin: 0;
+                        font-family: FlorensReg;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        line-height: 35px;
+                        color: #fff;
+                        padding-right: 44px;
+                        text-align: right;
+                        text-shadow: 2px 2px 0 rgba(50,50,50,0.3);
+                    }
+
+/* ========== END PRODUCTOS NEW DESIGN
+========================================================================== */
+
+/* ========== CONTACTO
+========================================================================== */
+
+    .leftboxcon{
+        font-family: FlorensReg;
+        position: absolute;
+        width: 291px;
+        height: 455px;
+        margin-top: 67px;
+    }
+
+    .leftboxcon h1{
+        margin-top: 0;
+        width: 267px;
+        height: 31px;
+        line-height: 31px;
+        font-size: 16px;
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 24px;
+        background-color: #8ec44b;
+    }
+
+    .leftboxcon p{
+        font-size: 8pt !important;
+        color: #fff !important;
+        margin-top: -6px !important;
+    }
+
+    .leftboxcon h2{
+        margin-top: 0;
+        margin-bottom: 15px;
+        width: 147px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        padding-left: 24px;
+        background-color: #8ec44b;
+    }
+
+    .formaciondd{
+        width: 267px !important;
+        height: 31px !important;
+        line-height: 31px !important;
+        font-size: 16px !important;
+    }
+
+    #linkDistribuidores{
+        cursor: pointer;
+    }
+
+    .midboxcon{
+        position: absolute;
+        width: 246px;
+        height: 45px;
+        margin-top: 67px;
+        margin-left: 311px;
+    }
+
+
+    .rightboxcon{
+        position: absolute;
+        width: 273px;
+        height: 289px;
+        margin-top: 25px;
+        font-family: FlorensReg;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 12px;
+        right: 24px;
+    }
+
+    .rightboxcon h2{
+        margin-top: 42px;
+        margin-bottom: 32px;
+        width: 273px;
+        height: 31px;
+        background-color: #8ec44b;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 22px;
+        line-height: 31px;
+        padding-left: 24px;
+    }
+
+    .rightboxcon input, .rightboxcon textarea{
+        background-color: #313131;
+        border: none;
+        height: 24px;
+        width: 273px;
+        color: #fff;
+        font-family: FlorensReg;
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    .rightboxcon textarea{
+        height: 168px;
+        font-family: FlorensReg;
+        font-size: 12px;
+        padding-left: 15px;
+    }
+
+    .rightboxcon div{
+        background-color: #8ec44b;
+        text-transform: uppercase;
+        color: #fff;
+        width: 100px;
+        height: 24px;
+        line-height: 24px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .requisitos{
+        background-color: black !important;
+        color: #8ec44b !important;
+    }
+
+    .contactbtn{
+        width: 90px !important;
+        background-color: #8ec44b !important;
+        font-family: FlorensReg;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 67px;
+
+    }
+
+    .contactspace1{
+        margin-top: 800px !important;
+    }
+
+    .contactspace2{
+        margin-top: 100px !important;
+    }
+
+    .contactspace3{
+        margin-top: 100px !important;
+    }
+
+/* ========== END CONTACTO
+========================================================================== */
 
 
 
@@ -1568,8 +1583,9 @@ body{
 
 
 
-/* ==========================================================================
-INIT ANIMATION CLASSES
+
+
+/* =========== INIT ANIMATION CLASSES
 ========================================================================== */
     
     .SlideOut{
@@ -1585,174 +1601,217 @@ INIT ANIMATION CLASSES
         z-index: 1000000;
     }
 
-/* ==========================================================================
-END ANIMATION CLASSES
+/* =========== END ANIMATION CLASSES
 ========================================================================== */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-.hidemenu{
-    position: absolute;
-    width: 876px;
-    height: 17px;
-    padding-top: 10px;
-    overflow: hidden;
-    margin: auto;
-    left: 0;
-    right: 0;
-    margin-top: 700px;
-
-}
-
-.swift:hover{
-    opacity: 1;
-    color: #8ec44b;
-}
-
-.barrafinal{
-    position: absolute;
-    width: 876px;
-    height: 26px;
-    line-height: 26px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 9px;
-    font-family: FlorensReg;
-    color: #fff;
-    margin: auto;
-    top: 735px;
-    left: 0;
-    right: 0;
-    background-image: url(../img/subtitle-bg.svg);
-    -webkit-transition: top 0.8s; /* Safari */
-    transition: top 0.8s;
-    transition-timing-function: ease;
-    -webkit-transition-timing-function: ease;
-}
-
-
-.bfoutindex{
-    top: 935px;
-}
-
-.bfinProducts{
-    top: 1035px;
-}
-
-.bfincontact{
-    top: 835px !important;
-}
-
-.openbfincontact{
-    top: 1035px !important;
-}
-
-.footprint{
-    position: absolute;
-    width: 876px;
-    height: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
-    font-size: 8px;
-    font-family: FlorensBol;
-    text-align: right;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 765px;
-    color: #fff;
-    margin-bottom: 30px;
-    -webkit-transition: top 0.8s; /* Safari */
-    transition: top 0.8s;
-    transition-timing-function: ease;
-    -webkit-transition-timing-function: ease;
-}
-
-.fpoutindex{
-    top: 965px;
-}
-
-.fpinProducts{
-    top: 1065px;
-}
-
-.fpincontact{
-    top: 865px !important;
-}
-
-.openfpincontact{
-    top: 1065px !important;
-}
-
-.lucky-cond{
-    max-width: 25px;
-    min-width: 25px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ========= Footer
+========================================================================== */
+    .hidemenu{
+        position: absolute;
+        width: 876px;
+        height: 17px;
+        padding-top: 10px;
+        overflow: hidden;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 700px;
+
+    }
+
+    .swift:hover{
+        opacity: 1;
+        color: #8ec44b;
+    }
+
+    .barrafinal{
+        position: absolute;
+        width: 876px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9px;
+        font-family: FlorensReg;
+        color: #fff;
+        margin: auto;
+        top: 735px;
+        left: 0;
+        right: 0;
+        background-image: url(../img/subtitle-bg.svg);
+        -webkit-transition: top 0.8s; /* Safari */
+        transition: top 0.8s;
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+
+
+    .bfoutindex{
+        top: 935px;
+    }
+
+    .bfinProducts{
+        top: 1035px;
+    }
+
+    .bfincontact{
+        top: 835px !important;
+    }
+
+    .openbfincontact{
+        top: 1035px !important;
+    }
+
+    .footprint{
+        position: absolute;
+        width: 876px;
+        height: 30px;
+        line-height: 30px;
+        text-transform: uppercase;
+        font-size: 8px;
+        font-family: FlorensBol;
+        text-align: right;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 765px;
+        color: #fff;
+        margin-bottom: 30px;
+        -webkit-transition: top 0.8s; /* Safari */
+        transition: top 0.8s;
+        transition-timing-function: ease;
+        -webkit-transition-timing-function: ease;
+    }
+
+    .fpoutindex{
+        top: 965px;
+    }
+
+    .fpinProducts{
+        top: 1065px;
+    }
+
+    .fpincontact{
+        top: 865px !important;
+    }
+
+    .openfpincontact{
+        top: 1065px !important;
+    }
+
+    .lucky-cond{
+        max-width: 25px;
+        min-width: 25px;
+    }
+
+/* ========= END Footer
+========================================================================== */
+
+
+/*/////////////// RESPONSIVE CLASSES ///////////////*/
+    @media (max-width: 767px){
+        #mobile{}
+    }
+
+    @media (min-width: 768px){
+        #tablet{}
+    }
+
+                @media (min-width: 992px){
+                    #laptops{}
+                    /*DONE*/
+                }
+
+    @media (min-width: 1200px){
+        #desktops{}
+
+        /*GENERAL WRAPPERS*/
+            #wrapper{
+                width: 90%;
+            }
+
+            .header-menu, .container, .barrafinal, .footprint {
+                width: 100%;
+                position: relative;
+            }
+        /*END GENERAL WRAPPERS*/
+
+        /*HEADER STYLE*/
+            .header-menu li{
+                width: 10%;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            }
+
+            .header-logo{
+                width: 37% !important;
+                margin-left: 0px !important;
+                margin-right: 0px !important;
+            }
+
+            .dotline{
+                width: 100%;
+            }
+        /*END HEADER STYLE*/
+
+        /*HOME STYLE*/
+            .container{
+                margin-top: 150px;
+            }
+
+            .imgwindow{
+                width: 100%;
+                height: 30vw;
+            }
+
+            .inimage{
+                width: 100%;
+                height: 30vw;
+            }
+
+            .inimage img{
+                width: 100%;
+            }
+
+            .line0{
+                margin-top: 15vw;
+            }
+
+            .line1{
+                margin-top: 16.8vw;
+            }
+
+            .line2{
+                margin-top: 18.7vw;
+            }
+        /*END HOME STYLE*/
+
+        /* FOOTER MENU STYLE */
+             .downwrapper{
+                width: 100%;
+             }
+
+             .downboxes{
+                width: 33.33%;
+                position: relative;
+                float: left;
+             }
+
+             .destacados, .promos{
+                margin-left: 0;
+             }
+
+             .subtitles{
+                width: 100%;
+             }
+        /* END FOOTER MENU STYLE */
+
+    }
+/*/////////////// END RESPONSIVE CLASSES ///////////////*/
 
 
 
