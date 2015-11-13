@@ -29,6 +29,9 @@ $(document).ready(function(){
 			$('.barraFinalProducts').toggleClass('bfinProducts');
 			$('.productsFootPrint').toggleClass('fpinProducts');
 
+			// corner 3 hidding
+			$('.corner3').toggleClass('crystal');
+
 		});
 	// END FOOTER HEIGHT ANIMATION
 
@@ -56,6 +59,11 @@ $(document).ready(function(){
 			$('#pho-mision').hide('500');
 			$('#pho-vision').hide('500');
 			$('#pho-filosofia').hide('500');
+			$('#pho-valores').hide('500');
+
+			$('#valoresclick').addClass('noact');
+			$('#valoresclick').removeClass('act');
+			$('#valorescontent').hide('500');
 
 		});
 
@@ -80,6 +88,11 @@ $(document).ready(function(){
 			$('#pho-newbauer').hide('500');
 			$('#pho-vision').hide('500');
 			$('#pho-filosofia').hide('500');
+			$('#pho-valores').hide('500');
+
+			$('#valoresclick').addClass('noact');
+			$('#valoresclick').removeClass('act');
+			$('#valorescontent').hide('500');
 
 		});
 
@@ -104,6 +117,11 @@ $(document).ready(function(){
 			$('#pho-mision').hide('500');
 			$('#pho-newbauer').hide('500');
 			$('#pho-filosofia').hide('500');
+			$('#pho-valores').hide('500');
+
+			$('#valoresclick').addClass('noact');
+			$('#valoresclick').removeClass('act');
+			$('#valorescontent').hide('500');
 
 		});
 
@@ -125,6 +143,41 @@ $(document).ready(function(){
 			$('#bauercontent').hide('500');
 
 			$('#pho-filosofia').delay('500').show('5000');
+			$('#pho-mision').hide('500');
+			$('#pho-vision').hide('500');
+			$('#pho-newbauer').hide('500');
+			$('#pho-valores').hide('500');
+
+			$('#valoresclick').addClass('noact');
+			$('#valoresclick').removeClass('act');
+			$('#valorescontent').hide('500');
+
+		});
+
+		$('#valoresclick').click(function(){
+			$('#valoresclick').addClass('act');
+			$('#valoresclick').removeClass('noact');
+			$('#valorescontent').show('5000');
+
+
+			$('#misionclick').addClass('noact');
+			$('#misionclick').removeClass('act');
+			$('#misioncontent').hide('500');
+
+			$('#visionclick').addClass('noact');
+			$('#visionclick').removeClass('act');
+			$('#visioncontent').hide('500');
+
+			$('#bauerclick').addClass('noact');
+			$('#bauerclick').removeClass('act');
+			$('#bauercontent').hide('500');
+
+			$('#filosclick').addClass('noact');
+			$('#filosclick').removeClass('act');
+			$('#filoscontent').hide('500');
+
+			$('#pho-valores').delay('500').show('5000');
+			$('#pho-filosofia').hide('500');
 			$('#pho-mision').hide('500');
 			$('#pho-vision').hide('500');
 			$('#pho-newbauer').hide('500');

@@ -10,50 +10,50 @@ var tagLines = [tagLine1, tagLine2, tagLine3, tagLine4, tagLine5];
 
 function changeTagLine(){
 	if(imageCount == 1){
-		tagLine1.className = "";
+		tagLine1.className = "tagLineWrapper";
 		for (var i = 1; i < 5; i++) {
-			tagLines[i].className = "hidden";
+			tagLines[i].className = "tagLineWrapper hidden";
 		};
 	}
 
 
 	if(imageCount == 2){
-		tagLine2.className = "";
+		tagLine2.className = "tagLineWrapper";
 
-		tagLine1.className = "hidden";
-		tagLine3.className = "hidden";
-		tagLine4.className = "hidden";
-		tagLine5.className = "hidden";
+		tagLine1.className = "tagLineWrapper hidden";
+		tagLine3.className = "tagLineWrapper hidden";
+		tagLine4.className = "tagLineWrapper hidden";
+		tagLine5.className = "tagLineWrapper hidden";
 	}
 
 
 	if(imageCount == 3){
-		tagLine3.className = "";
+		tagLine3.className = "tagLineWrapper";
 
-		tagLine1.className = "hidden";
-		tagLine2.className = "hidden";
-		tagLine4.className = "hidden";
-		tagLine5.className = "hidden";
+		tagLine1.className = "tagLineWrapper hidden";
+		tagLine2.className = "tagLineWrapper hidden";
+		tagLine4.className = "tagLineWrapper hidden";
+		tagLine5.className = "tagLineWrapper hidden";
 	}
 
 
 	if(imageCount == 4){
-		tagLine4.className = "";
+		tagLine4.className = "tagLineWrapper";
 
-		tagLine1.className = "hidden";
-		tagLine2.className = "hidden";
-		tagLine3.className = "hidden";
-		tagLine5.className = "hidden";
+		tagLine1.className = "tagLineWrapper hidden";
+		tagLine2.className = "tagLineWrapper hidden";
+		tagLine3.className = "tagLineWrapper hidden";
+		tagLine5.className = "tagLineWrapper hidden";
 	}
 
 
 	if(imageCount == 5){
-		tagLine5.className = "";
+		tagLine5.className = "tagLineWrapper";
 
-		tagLine1.className = "hidden";
-		tagLine2.className = "hidden";
-		tagLine3.className = "hidden";
-		tagLine4.className = "hidden";
+		tagLine1.className = "tagLineWrapper hidden";
+		tagLine2.className = "tagLineWrapper hidden";
+		tagLine3.className = "tagLineWrapper hidden";
+		tagLine4.className = "tagLineWrapper hidden";
 	}
 }
 	

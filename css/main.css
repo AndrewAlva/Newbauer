@@ -177,11 +177,6 @@ textarea {
         position: absolute;
         width: 900px;
         height: 768px;
-            /* ==========================================================================
-
-        background-color: gray;
-
-       ========================================================================== */
         margin: auto;
         top: 0;
         right: 0;
@@ -191,14 +186,20 @@ textarea {
 
 /*/////////////// HEADER STYLE ///////////////////*/
     .header-menu{
-        background-image: url(../img/bg-gradient.png);
+        /*background-image: url(../img/bg-gradient.png);*/
         position: absolute;
         width: 876px;
-        height: 102px;
+        height: 130px;
         margin: auto;
         left: 0;
         right: 0;
         margin-top: 30px;
+
+        background: #494a4b; /* Old browsers */
+        background: -moz-linear-gradient(top,  #494a4b 0%, #494a4b 28%, #313233 49%, #161414 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  #494a4b 0%,#494a4b 28%,#313233 49%,#161414 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  #494a4b 0%,#494a4b 28%,#313233 49%,#161414 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494a4b', endColorstr='#161414',GradientType=0 ); /* IE6-9 */
     }
 
     .header-menu a{
@@ -229,6 +230,7 @@ textarea {
         text-align: center;
         margin-left: 5px;
         margin-right: 5px;
+        text-shadow: -1px -1px 0 #000;
     }
 
     .header-logo {
@@ -261,42 +263,70 @@ textarea {
         margin-top: 170px;
     }
 
-    .lines{
+    .main-image{
+        position: relative;
+        width: 100%;
+        height: 33vw;
+        max-height: 475px;
+    }
+
+    #homeSlogan{
         position: absolute;
+        width: 380px;
+        height: 22px;
+        margin: auto;
+        top: 0; 
+        bottom: 73px;
+    }
+
+    .tagLineWrapper{
+        position: absolute;
+        width: 350px;
+        height: 50px;
+        margin: auto;
+        top: 0; bottom: 0;
+    }
+
+    .lines{
+        position: relative;
         height: 22px;
         line-height: 22px;
         font-family: FlorensExpBol;
         font-size: 13px;
         text-transform: uppercase;
         padding-left: 23px;
-
+        left: 1px;
         z-index: 10;
     }
 
     .line0{
         width: 350px;
         background-color: rgba(142,196,75,0.8);
-        margin-top: 108px;
         color: #fff;
         font-size: 15px;
     }
 
     .line1{
-        width: 232px;
+        width: 150px;
         background-image: url(../img/line1-bg.svg);
-        margin-top: 130px;
         color: #fff;
+    }
+
+    .line2{
+        width: 180px;
+        background-color: #000;
+        color: #cdcfcf;
+    }
+
+    #homeTagLine-3 .line1{
+        width: 200px;
+    }
+    #homeTagLine-3 .line2{
+        width: 230px;
     }
 
     #homeTagLine-4 .line1{
         width: 312px !important;
-    }
-
-    .line2{
-        width: 215px;
-        background-color: #000;
-        margin-top: 152px;
-        color: #cdcfcf;
     }
 
     #homeTagLine-4 .line2, #homeTagLine-5 .line2 {
@@ -430,12 +460,16 @@ textarea {
 .subtitlenos{
     background-color: #3f3f3f;
     width: 255px;
-    height: 24px;
-    line-height: 24px;
+    height: 50px;
+    line-height: 16px;
     text-transform: uppercase;
     font-size: 11px;
     padding-left: 24px;
     margin-top: -18px;
+}
+
+.subtitlenos ul{
+    padding-top: 10px;
 }
 
 .subtitlenos li{
@@ -498,11 +532,11 @@ textarea {
 ////////////////////////SHIFTING CONTENT////////////////////////
 ////////////////////////////////////////////////////////////////////////*/
 
-#discontent, #misioncontent, #visioncontent, #filoscontent{
+#discontent, #misioncontent, #visioncontent, #filoscontent, #valorescontent{
     display: none;
 }
 
-#pho-mision, #pho-vision, #pho-filosofia{
+#pho-mision, #pho-vision, #pho-filosofia, #pho-valores{
     display: none;
 }
 
@@ -528,8 +562,7 @@ textarea {
 
 
 
-/* ==========  FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES)
-========================================================================== */
+/* ==========  FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES) ======================= */
     .outindex{
         position: absolute;
         margin: auto;
@@ -554,7 +587,7 @@ textarea {
 
     .inindex{
         position: relative;
-        height: 230px;
+        height: 340px;
         margin: auto;
         right: 0;
         left: 0;
@@ -650,14 +683,18 @@ textarea {
         color: #8ec44b;
     }
 
+    .mid-prod{
+        height: 130px;
+        margin-bottom: 30px;
+    }
+
     .mid-box-text{
-        width: 140px !important;
-        height: 72px;
+        width: 140px;
+        height: 100%;
         overflow: scroll;
         color: #fff;
         padding-left: 10px;
         text-align: justify;
-        width: 250px;
         margin-bottom: 0;
         margin-top: 0;
         word-break:break-all;
@@ -665,11 +702,6 @@ textarea {
 
     .mid-box-text:hover{
         color: #8ec44b;
-    }
-
-    .mid-prod{
-        height: 87px;
-        margin-bottom: 18px;
     }
 
     .promos{
@@ -682,48 +714,48 @@ textarea {
         overflow: scroll;
     }
 
-    .downboxes img{
-        margin-top: 1px; 
+    .promos p:hover{
+        color: #8ec44b;
     }
 
     .tanque{
         height: 78px;
         position: absolute;
         margin-left: 190px;
-        margin-top: -81px !important;
+        margin-top: -81px;
     }
 
     .tanque2{
         height: 78px;
         position: absolute;
         margin-left: 190px;
-        margin-top: -78px !important;
+        margin-top: -78px;
     }
 
     .tanque3{
         position: absolute;
         float: left;
         margin-left: 10px;
-        margin-top: -9px !important;
+        margin-top: -9px;
     }
 
     .corner {
         position: relative;
-        margin-top: -22px !important;
+        margin-top: -22px;
         margin-right: 14px;
         float: right;
     }
 
     .corner2{
         position: relative;
-        margin-top: -19px !important;
+        margin-top: -19px;
         margin-right: 14px;
         float: right;
     }
 
     .corner3 {
         position: relative;
-        margin-top: 160px !important;
+        margin-top: 160px;
         margin-right: 4px;
         float: right;
     }
@@ -789,8 +821,18 @@ textarea {
         height: 370px;
         overflow: scroll;
         font-size: 12px;
+        text-align: justify;
         color: #fff;
         margin-top: 135px;
+
+    }
+
+    .noticia span{
+        text-decoration: underline;
+    }
+
+    .noticia span:hover{
+        color: #8ec44b;
     }
 
 
@@ -806,13 +848,10 @@ textarea {
         position: absolute;
         margin-left: 589px;
     }
-
-/* ==========  END FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES)
-========================================================================== */
+/* ==========  END FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES) =================== */
 
 
-/* =========== PRODUCTOS
-   ========================================================================== */
+/* =========== PRODUCTOS ============================== */
         .products-wrapper{
             width: 876px;
             height: 611px;
@@ -955,16 +994,13 @@ textarea {
         #pho-fmonopotasico, #pho-ndeamonio, #pho-ndecalcio, #pho-ndemagnesio, #pho-ndepotasio, #pho-ndezinc, #pho-uan32{
             display: none;
         }
-
-/* =========== END PRODUCTOS
-   ========================================================================== */
+/* =========== END PRODUCTOS ========================== */
 
 
 
 
 
-/* ========== PRODUCTOS NEW DESIGN
-========================================================================== */
+/* ========== PRODUCTOS NEW DESIGN ================================= */
         .inProducts{
             position: absolute;
             margin: auto;
@@ -1421,12 +1457,10 @@ textarea {
                         text-align: right;
                         text-shadow: 2px 2px 0 rgba(50,50,50,0.3);
                     }
+/* ========== END PRODUCTOS NEW DESIGN ============================= */
 
-/* ========== END PRODUCTOS NEW DESIGN
-========================================================================== */
 
-/* ========== CONTACTO
-========================================================================== */
+/* ========== CONTACTO =============================== */
 
     .leftboxcon{
         font-family: FlorensReg;
@@ -1543,7 +1577,15 @@ textarea {
 
     .requisitos{
         background-color: black !important;
-        color: #8ec44b !important;
+    }
+
+    .requisitos a{
+        color: #8ec44b;
+        text-decoration: none;
+    }
+
+    .requisitos a:hover{
+        text-decoration: underline;
     }
 
     .contactbtn{
@@ -1568,48 +1610,9 @@ textarea {
     .contactspace3{
         margin-top: 100px !important;
     }
+/* ========== END CONTACTO =========================== */
 
-/* ========== END CONTACTO
-========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* =========== INIT ANIMATION CLASSES
-========================================================================== */
-    
-    .SlideOut{
-        opacity: 0;
-        left: 50px;
-    }
-
-    .showProductsBars{
-        width: 180px !important;
-    }
-
-    .inFront{
-        z-index: 1000000;
-    }
-
-/* =========== END ANIMATION CLASSES
-========================================================================== */
-
-
-
-
-
-/* ========= Footer
-========================================================================== */
+/* ========= Footer ============================================= */
     .hidemenu{
         position: absolute;
         width: 876px;
@@ -1668,7 +1671,7 @@ textarea {
 
     .footprint{
         position: absolute;
-        width: 876px;
+        width: 200px;
         height: 30px;
         line-height: 30px;
         text-transform: uppercase;
@@ -1685,6 +1688,32 @@ textarea {
         transition: top 0.8s;
         transition-timing-function: ease;
         -webkit-transition-timing-function: ease;
+    }
+
+    .iconsBox{
+        position: relative;
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+
+    .iconsBox img{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        left: 0; right: 0;
+        opacity: .5;
+
+        -webkit-transition: all .4s ease-in-out;
+           -moz-transition: all .4s ease-in-out;
+            -ms-transition: all .4s ease-in-out;
+             -o-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+    }
+
+    .iconsBox img:hover{
+        opacity: .8;
     }
 
     .fpoutindex{
@@ -1707,9 +1736,40 @@ textarea {
         max-width: 25px;
         min-width: 25px;
     }
+/* ========= END Footer ========================================= */
 
-/* ========= END Footer
-========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+/* =========== INIT ANIMATION CLASSES ========================================= */
+    
+    .SlideOut{
+        opacity: 0;
+        left: 50px;
+    }
+
+    .showProductsBars{
+        width: 180px !important;
+    }
+
+    .inFront{
+        z-index: 1000000;
+    }
+/* =========== END ANIMATION CLASSES ======================================= */
+
+
+
+
+
+
 
 
 /*/////////////// RESPONSIVE CLASSES ///////////////*/
@@ -1732,19 +1792,35 @@ textarea {
         /*GENERAL WRAPPERS*/
             #wrapper{
                 width: 90%;
+                max-width: 1300px !important;
             }
 
             .header-menu, .container, .barrafinal, .footprint {
                 width: 100%;
                 position: relative;
             }
+
+            .container{
+                margin-top: 25px;
+            }
         /*END GENERAL WRAPPERS*/
 
         /*HEADER STYLE*/
+
+            .header-menu{
+                margin-top: 0px;
+            }
+
+            .header-menu ul{
+                margin: 20px 0 0 0;
+                height: 100%;
+            }
+
             .header-menu li{
                 width: 10%;
                 margin-left: 0px !important;
                 margin-right: 0px !important;
+                top: 50px;
             }
 
             .header-logo{
@@ -1755,40 +1831,62 @@ textarea {
 
             .dotline{
                 width: 100%;
+                margin-top: 0;
             }
         /*END HEADER STYLE*/
 
         /*HOME STYLE*/
-            .container{
-                margin-top: 150px;
-            }
-
             .imgwindow{
                 width: 100%;
                 height: 30vw;
+                max-height: 435px;
             }
 
             .inimage{
                 width: 100%;
                 height: 30vw;
+
             }
 
             .inimage img{
                 width: 100%;
             }
 
-            .line0{
-                margin-top: 15vw;
-            }
+            .switch ul{
+                margin-bottom: 0;
+                margin-top: -21px;
 
-            .line1{
-                margin-top: 16.8vw;
-            }
-
-            .line2{
-                margin-top: 18.7vw;
             }
         /*END HOME STYLE*/
+
+        /* NOSOTROS STYLE */
+            .outindex{
+                position: relative;
+                top: 0;
+            }
+
+            .altomenus{
+                height: 350px !important;
+            }
+        /* END NOSOTROS STYLE */
+
+        /* NOTICIAS STYLE */
+            .midbox-news{
+                margin-left: 37.3%;
+                width: 30%;
+            }
+
+            .rightbox-news{
+                margin-left: 0;
+                right: 0;
+                width: 30%;
+            }
+
+            .noticia h2, .noticia p{
+                width: 100%;
+            }
+
+        /* END NOTICIAS STYLE */
 
         /* FOOTER MENU STYLE */
              .downwrapper{
@@ -1796,9 +1894,14 @@ textarea {
              }
 
              .downboxes{
-                width: 33.33%;
                 position: relative;
+                width: 33.33%;
+                height: 100%;
                 float: left;
+             }
+
+             .downboxes h5, .downboxes p, .mid-box-text{
+                padding-left: 5%;
              }
 
              .destacados, .promos{
@@ -1807,6 +1910,70 @@ textarea {
 
              .subtitles{
                 width: 100%;
+             }
+
+             .third-box-text{
+                width: 90%;
+                overflow: hidden;
+             }
+
+             .logoIrapuato{
+                width: 100%;
+                margin-top: 10px;
+             }
+
+             .corner{
+                margin-top: -19px;
+             }
+
+             .corner3{
+                position: absolute;
+                margin: 0;
+                right: 0;
+                bottom: 0;
+             }
+
+             .corner, .corner2, .corner3{
+                margin-right: 0;
+             }
+
+             .mid-box-text{
+                width: 50%;
+                overflow: hidden;
+             }
+
+             .tanque{
+                margin-top: 0;
+                top: 40px;
+                height: 130px;
+             }
+
+             .tanque2{
+                height: 130px;
+                margin-top: -140px;
+             }
+
+             .tanque, .tanque2{
+                margin-left: 70%;
+             }
+
+             .promos p{
+                width: 40%;
+             }
+
+             .tanque3{
+                margin-left: 0;
+                width: 50%;
+                
+             }
+
+             .barrafinal{
+                top: 20px;
+             }
+
+             .footprint{
+                top: 30px;
+                margin-bottom: 10px;
              }
         /* END FOOTER MENU STYLE */
 
@@ -1822,6 +1989,9 @@ textarea {
    Helper classes
    ========================================================================== */
 
+.crystal{
+    opacity: 0;
+}
 
 
 /*
