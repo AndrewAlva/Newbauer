@@ -218,6 +218,113 @@ $(document).ready(function(){
 			
 
 		});
+
+		var disLeftArrow = 5;
+		var disRightArrow = 2;
+
+		$('.dis-left').click(function(event) {
+			$('.dis-name').empty();
+			$('.dis-capacity').empty();
+
+			if (disLeftArrow == 1){
+				$('.dis-name').append('<h3>Pipas</h3>');
+				$('.dis-capacity').append('<h5>13-35 toneladas</h5>');
+				$('#dis-container').addClass('SlideOut');
+				$('#dis-pipa').removeClass('SlideOut');
+
+				disLeftArrow = 5;
+				disRightArrow = 2;
+
+			} else if (disLeftArrow == 2){
+				$('.dis-name').append('<h3>Contenedores</h3>');
+				$('.dis-capacity').append('<h5>600 L</h5>');
+				$('#dis-bidon-200').addClass('SlideOut');
+				$('#dis-container').removeClass('SlideOut');
+
+				disLeftArrow = 1;
+				disRightArrow = 3;
+
+			}else if (disLeftArrow == 3){
+				$('.dis-name').append('<h3>Bidones</h3>');
+				$('.dis-capacity').append('<h5>200 L</h5>');
+				$('#dis-bidon-20').addClass('SlideOut');
+				$('#dis-bidon-200').removeClass('SlideOut');
+
+				disLeftArrow = 2;
+				disRightArrow = 4;
+
+			}else if (disLeftArrow == 4){
+				$('.dis-name').append('<h3>Bidones</h3>');
+				$('.dis-capacity').append('<h5>20 L</h5>');
+				$('#dis-misil').addClass('SlideOut');
+				$('#dis-bidon-20').removeClass('SlideOut');
+
+				disLeftArrow = 3;
+				disRightArrow = 5;
+
+			}else if (disLeftArrow == 5){
+				$('.dis-name').append('<h3>Misiles</h3>');
+				$('.dis-capacity').append('<h5>1 L</h5>');
+				$('#dis-pipa').addClass('SlideOut');
+				$('#dis-misil').removeClass('SlideOut');
+
+				disLeftArrow = 4;
+				disRightArrow = 1;
+
+			}
+		});
+
+		$('.dis-right').click(function(event) {
+			$('.dis-name').empty();
+			$('.dis-capacity').empty();
+
+			if (disRightArrow == 1){
+				$('.dis-name').append('<h3>Pipas</h3>');
+				$('.dis-capacity').append('<h5>13-35 toneladas</h5>');
+				$('#dis-misil').addClass('SlideOut');
+				$('#dis-pipa').removeClass('SlideOut');
+
+				disLeftArrow = 5;
+				disRightArrow = 2;
+
+			} else if (disRightArrow == 2){
+				$('.dis-name').append('<h3>Contenedores</h3>');
+				$('.dis-capacity').append('<h5>600 L</h5>');
+				$('#dis-pipa').addClass('SlideOut');
+				$('#dis-container').removeClass('SlideOut');
+
+				disLeftArrow = 1;
+				disRightArrow = 3;
+
+			}else if (disRightArrow == 3){
+				$('.dis-name').append('<h3>Bidones</h3>');
+				$('.dis-capacity').append('<h5>200 L</h5>');
+				$('#dis-container').addClass('SlideOut');
+				$('#dis-bidon-200').removeClass('SlideOut');
+
+				disLeftArrow = 2;
+				disRightArrow = 4;
+
+			}else if (disRightArrow == 4){
+				$('.dis-name').append('<h3>Bidones</h3>');
+				$('.dis-capacity').append('<h5>20 L</h5>');
+				$('#dis-bidon-200').addClass('SlideOut');
+				$('#dis-bidon-20').removeClass('SlideOut');
+
+				disLeftArrow = 3;
+				disRightArrow = 5;
+
+			}else if (disRightArrow == 5){
+				$('.dis-name').append('<h3>Misiles</h3>');
+				$('.dis-capacity').append('<h5>1 L</h5>');
+				$('#dis-bidon-20').addClass('SlideOut');
+				$('#dis-misil').removeClass('SlideOut');
+
+				disLeftArrow = 4;
+				disRightArrow = 1;
+
+			}
+		});
 	// END BENEFICIOS CONTENIDO
 
 

@@ -1,3 +1,4 @@
+var intervalTrigger = 0;
 var imageCount = 1;
 var total = 5;
 var tagLine1 = document.getElementById('homeTagLine-1');
@@ -57,20 +58,29 @@ function changeTagLine(){
 	}
 }
 	
+
 window.setInterval(function photoA() {
-	var image = document.getElementById('image');
-	imageCount = imageCount + 1;
-	if(imageCount > total){imageCount = 1;}
-	if(imageCount < 1){imageCount = total;}	
-	image.src = "img/img"+ imageCount +".jpg";
+	intervalTrigger += 1; 
 
-	changeTagLine();
+	if (intervalTrigger == 5){
+		var image = document.getElementById('image');
+		imageCount = imageCount + 1;
+		if(imageCount > total){imageCount = 1;}
+		if(imageCount < 1){imageCount = total;}	
+		image.src = "img/img"+ imageCount +".jpg";
 
-	console.log("Image Count: " + imageCount);
-	console.log("Total: " + total);
-},5000);
+		changeTagLine();
+
+		intervalTrigger = 0;
+
+		console.log("Image Count: " + imageCount);
+		console.log("Total: " + total);
+	}
+
+},1000);
 
 function foto(x) {
+	intervalTrigger = 0;
 	var image = document.getElementById('image');
 	image.src = "img/img"+ x +".jpg";
 

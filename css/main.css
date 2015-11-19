@@ -557,6 +557,106 @@ textarea {
 
 
 
+/* =========== BENEFICIOS ============================== */
+    /* =========== DISTRIBUCIÓN ============================== */
+        #pho-distribucion{
+            width: 646px;
+            height: 340px;
+        }
+
+        #pho-distribucion img{
+            position: absolute;
+            width: 100%;
+            left: 0;
+
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+        }
+
+        #dis-nav{
+            position: absolute;
+            width: 300px;
+            height: 70px;
+            margin: auto;
+            left: 0; right: 0; bottom: 0;
+            text-align: center;
+        }
+
+        .dis-name{
+            position: absolute;
+            margin: auto;
+            left: 0; right: 0;
+            width: 75%;
+            height: 30px;
+            line-height: 30px;
+            color: #fff;
+            text-transform: uppercase;
+            background-color: #8ec44b;
+        }
+
+        .dis-capacity{
+            position: absolute;
+            margin: auto;
+            top: 30px;
+            left: 0; right: 0;
+            width: 75%;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+        }
+
+        #dis-nav h3, #dis-nav h5{
+            margin: 0;
+        }
+
+        .dis-left{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            top: 0; bottom: 0;
+            color: #8ec44b;
+            left: 0;
+            font-size: 22px;
+            opacity: .5;
+
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+
+            cursor: pointer;
+        }
+
+        .dis-right{
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            top: 0; bottom: 0;
+            color: #8ec44b;
+            right: 0;
+            font-size: 22px;
+            opacity: .5;
+
+            -webkit-transition: all .4s ease-in-out;
+               -moz-transition: all .4s ease-in-out;
+                -ms-transition: all .4s ease-in-out;
+                 -o-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+
+            cursor: pointer;
+        }
+
+        .dis-right:hover, .dis-left:hover{
+            opacity: 1;
+        }
+    /* =========== END DISTRIBUCIÓN ============================== */
+/* =========== END BENEFICIOS ============================== */
 
 
 
@@ -1844,7 +1944,7 @@ textarea {
     
     .SlideOut{
         opacity: 0;
-        left: 50px;
+        left: 50px !important;
     }
 
     .showProductsBars{
@@ -1965,6 +2065,7 @@ textarea {
 
             .rightboxnos{
                 width: 60%;
+                height: 340px;
                 margin-left: 40%;
             }
 
