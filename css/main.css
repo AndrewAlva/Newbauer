@@ -1248,6 +1248,16 @@ textarea {
                         color: #fff;
                     }
 
+                        .productsDescription table, .productsDescription td {
+                            border: 1px solid #8ec44b;
+                        }
+
+                        .nameColumn{
+                            font-size: 14px;
+                            font-weight: bold;
+                            text-align: center;
+                        }
+
                     .productsFicha{
                         position: absolute;
                         width: 183px;
@@ -1313,7 +1323,7 @@ textarea {
         #bidonesNavWrapper{
             position: absolute;
             width: 35px;
-            height: 350px;
+            height: 455px;
             top: 80px;
             right: 0;
             z-index: 1000000000;
@@ -1326,6 +1336,7 @@ textarea {
                 float: right;
                 overflow: hidden;
                 cursor: pointer;
+                opacity: .8;
 
                 -webkit-transition: all 0.4s ease;
                 -o-transition: all 0.4s ease;
@@ -1333,7 +1344,8 @@ textarea {
             }
 
             .productsNavBars:hover{
-                width: 180px !important;
+                width: 240px !important;
+                opacity: 1;
             }
 
                 .productBlock{
@@ -1393,11 +1405,24 @@ textarea {
                     #newNavPotasium .productBlock{
                         background: url('../img/productos/icon_potasium.png');
                     }
+
+
+                    #newNavBrix .productBlock{
+                        background: url('../img/productos/icon_brix.png');
+                    }
+
+                    #newNavBlueba .productBlock{
+                        background: url('../img/productos/icon_blueba.png');
+                    }
+
+                    #newNavCalciumBoro .productBlock{
+                        background: url('../img/productos/icon_calciumboro.png');
+                    }
                 /*END BG PER BLOCK*/
 
                 .productBar{
                     position: absolute;
-                    width: 164px;
+                    width: 205px;
                     height: 35px;
                     z-index: 10;
                 }
@@ -1761,7 +1786,7 @@ textarea {
     }
 
     .showProductsBars{
-        width: 180px !important;
+        width: 210px !important;
     }
 
     .inFront{
@@ -1813,6 +1838,7 @@ textarea {
 
             .header-menu{
                 margin-top: 0px;
+                height: 180px;
             }
 
             .header-menu ul{
@@ -1824,7 +1850,7 @@ textarea {
                 width: 10%;
                 margin-left: 0px !important;
                 margin-right: 0px !important;
-                top: 50px;
+                top: 5px;
             }
 
             .header-logo{
