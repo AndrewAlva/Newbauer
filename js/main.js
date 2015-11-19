@@ -464,9 +464,9 @@ $(document).ready(function(){
 	////////////////////////////////END PRODUCTOS VIEJO////////////////////////////////
 
 	//////////////////////////////// INIT PRODUCTOS NUEVO ////////////////////////////////
-		setTimeout(function(){
-			$('.productsNavBars').removeClass('showProductsBars');
-		},500);
+		// setTimeout(function(){
+		// 	$('.productsNavBars').removeClass('showProductsBars');
+		// },500);
 
 		$('#newNavCalcium').click(function() {
 			$('#iconCalcium').addClass('currentBlock');

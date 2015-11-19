@@ -1897,6 +1897,17 @@ textarea {
             }
         /* END NOSOTROS STYLE */
 
+        /* PRODUCTOS STYLE */
+            .productsPhoto{
+                width: 20%;
+            }
+            
+            .productsInfoWrapper{
+                width: 45%;
+                left: 33%;
+            }
+        /* END PRODUCTOS STYLE */
+
         /* NOTICIAS STYLE */
             .midbox-news{
                 margin-left: 37.3%;
@@ -1954,8 +1965,6 @@ textarea {
             .contactbtn{
                 margin-top: 10px;
             }
-
-
         /* END CONTACTO STYLE */
 
         /* FOOTER MENU STYLE */
@@ -2034,7 +2043,7 @@ textarea {
              .tanque3{
                 margin-left: 0;
                 width: 50%;
-                
+                margin-top: 15px;
              }
 
              .barrafinal{
@@ -2044,6 +2053,10 @@ textarea {
              .footprint{
                 top: 30px;
                 margin-bottom: 10px;
+             }
+
+             .bfincontact, .fpincontact{
+                top: 30px !important;
              }
         /* END FOOTER MENU STYLE */
 
