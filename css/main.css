@@ -194,6 +194,7 @@ textarea {
         left: 0;
         right: 0;
         margin-top: 30px;
+        /*margin-bottom: 100px;*/
 
         background: #494a4b; /* Old browsers */
         background: -moz-linear-gradient(top,  #494a4b 0%, #494a4b 28%, #313233 49%, #161414 100%); /* FF3.6-15 */
@@ -246,6 +247,15 @@ textarea {
         background-image: url(../img/pressed-menu.svg);
         background-position: center;
     }
+
+    /*.slogan{
+        position: absolute;
+        width: 210px;
+        height: 78px;
+        margin: auto;
+        left: 0; right: 0;
+        bottom: -85px;
+    }*/
 
     .dotline{
         margin-top: -10px;
@@ -994,6 +1004,22 @@ textarea {
         #pho-fmonopotasico, #pho-ndeamonio, #pho-ndecalcio, #pho-ndemagnesio, #pho-ndepotasio, #pho-ndezinc, #pho-uan32{
             display: none;
         }
+
+        #newUan32Info .productsDescription table, #newUan32Info .productsDescription td{
+            border: 1px solid #445671;
+        }
+
+        #newNS40Info .productsDescription table, #newNS40Info .productsDescription td{
+            border: 1px solid #a4a011;
+        }
+
+        #newNitratosInfo .productsDescription table, #newNitratosInfo .productsDescription td{
+            border: 1px solid #4d162c;
+        }
+
+        #newCalciumBoroInfo .productsDescription table, #newCalciumBoroInfo .productsDescription td{
+            border: 1px solid #035f1a;
+        }
 /* =========== END PRODUCTOS ========================== */
 
 
@@ -1127,6 +1153,18 @@ textarea {
                     #newLetterPotasium h2{
                         color: #cc1660;
                     }
+
+                    #newLetterBrix h2{
+                        color: #037ea3;
+                    }
+
+                    #newLetterBlueba h2{
+                        color: #024090;
+                    }
+
+                    #newLetterCalciumBoro h2{
+                        color: #035f1a;
+                    }
                 /*END COLOR AND SHADOW PRODUCTS LETTER BG*/
 
             #shadowVignete{
@@ -1221,6 +1259,19 @@ textarea {
 
                         #newPotasiumInfo .productsName {
                             border-bottom: 2px solid #cc1660;
+                        }
+
+
+                        #newBrixInfo .productsName {
+                            border-bottom: 2px solid #037ea3;
+                        }
+
+                        #newBluebaInfo .productsName {
+                            border-bottom: 2px solid #024090;
+                        }
+
+                        #newCalciumBoroInfo .productsName {
+                            border-bottom: 2px solid #035f1a;
                         }
                     /*END BORDER BOTTOM NAME PRODUCTS*/
 
@@ -1344,7 +1395,7 @@ textarea {
             }
 
             .productsNavBars:hover{
-                width: 240px !important;
+                width: 220px !important;
                 opacity: 1;
             }
 
@@ -1468,6 +1519,17 @@ textarea {
                         background-color: #cc1660;
                     }
 
+
+                    #newNavBrix .productBar{
+                        background-color: #037ea3;
+                    }
+                    #newNavBlueba .productBar{
+                        background-color: #024090;
+                    }
+                    #newNavCalciumBoro .productBar{
+                        background-color: #035f1a;
+                    }
+
                     
                 /*END BG PER BAR*/
 
@@ -1478,7 +1540,7 @@ textarea {
                         font-size: 12px;
                         line-height: 35px;
                         color: #fff;
-                        padding-right: 44px;
+                        padding-right: 35px;
                         text-align: right;
                         text-shadow: 2px 2px 0 rgba(50,50,50,0.3);
                     }
@@ -1820,6 +1882,7 @@ textarea {
 
         /*GENERAL WRAPPERS*/
             #wrapper{
+                position: relative;
                 width: 90%;
                 max-width: 1300px !important;
             }
@@ -1861,7 +1924,8 @@ textarea {
 
             .dotline{
                 width: 100%;
-                margin-top: 0;
+                /*margin-top: 90px;*/
+                margin-top: 5px;
             }
         /*END HEADER STYLE*/
 
@@ -1891,11 +1955,6 @@ textarea {
         /*END HOME STYLE*/
 
         /* NOSOTROS STYLE */
-            .outindex{
-                position: relative;
-                top: 0;
-            }
-
             .altomenus{
                 height: 350px !important;
             }
@@ -1943,7 +2002,7 @@ textarea {
             .rightbox-news{
                 margin-left: 0;
                 right: 0;
-                width: 30%;
+                width: 288px;
             }
 
             .noticia h2, .noticia p{
@@ -1962,16 +2021,22 @@ textarea {
             }
 
             .midboxcon{
+                overflow: hidden;
                 width: 30%;
+                height: 465px;
                 margin-left: 35%;
             }
 
             .midboxcon img{
                 position: absolute;
-                width: 246px;
-                height: 465px;
+                height: 100%;
                 margin: auto;
-                left: 0; right: 0;
+                left: 50%;
+                -webkit-transform: translate(-50%,0);
+                   -moz-transform: translate(-50%,0);
+                    -ms-transform: translate(-50%,0);
+                     -o-transform: translate(-50%,0);
+                        transform: translate(-50%,0);
             }
 
             .rightboxcon{
@@ -2068,22 +2133,27 @@ textarea {
 
              .tanque3{
                 margin-left: 0;
-                width: 50%;
+                width: 180px;
                 margin-top: 15px;
              }
 
-             .barrafinal{
-                top: 20px;
-             }
+            .outindex{
+                position: relative;
+                top: 0;
+            }
 
-             .footprint{
+            .barrafinal{
+                top: 20px;
+            }
+
+            .footprint{
                 top: 30px;
                 margin-bottom: 10px;
-             }
+            }
 
-             .bfincontact, .fpincontact{
+            .bfincontact, .fpincontact{
                 top: 30px !important;
-             }
+            }
         /* END FOOTER MENU STYLE */
 
     }

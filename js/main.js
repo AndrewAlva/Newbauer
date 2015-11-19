@@ -479,6 +479,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').removeClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -490,6 +493,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -501,6 +507,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -512,6 +521,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavZinc').click(function() {
@@ -525,6 +537,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').removeClass('SlideOut');
@@ -536,6 +551,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').removeClass('SlideOut');
@@ -547,6 +565,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').addClass('inFront');
@@ -558,6 +579,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNav8-24-0').click(function() {
@@ -571,6 +595,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -582,6 +609,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -593,6 +623,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -604,6 +637,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavMKP').click(function() {
@@ -617,6 +653,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -628,6 +667,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -639,6 +681,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -650,6 +695,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavUan32').click(function() {
@@ -663,6 +711,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -674,6 +725,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -685,6 +739,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -696,6 +753,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavNS40').click(function() {
@@ -709,6 +769,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -720,6 +783,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -731,6 +797,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -742,6 +811,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavMagnesium').click(function() {
@@ -755,6 +827,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -766,6 +841,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -777,6 +855,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -788,6 +869,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavNitratos').click(function() {
@@ -801,6 +885,9 @@ $(document).ready(function(){
 			$('#iconNitratos').addClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -812,6 +899,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').removeClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -823,6 +913,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -834,6 +927,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavAmmonium').click(function() {
@@ -847,6 +943,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').addClass('currentBlock');
 			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -858,6 +957,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').removeClass('SlideOut');
 			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -869,6 +971,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').removeClass('SlideOut');
 			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -880,6 +985,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').addClass('inFront');
 			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
 		});
 
 		$('#newNavPotasium').click(function() {
@@ -893,6 +1001,9 @@ $(document).ready(function(){
 			$('#iconNitratos').removeClass('currentBlock');
 			$('#iconAmmonium').removeClass('currentBlock');
 			$('#iconPotasium').addClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
 
 			$('#newLetterCalcium').addClass('SlideOut');
 			$('#newLetterZinc').addClass('SlideOut');
@@ -904,6 +1015,9 @@ $(document).ready(function(){
 			$('#newLetterNitratos').addClass('SlideOut');
 			$('#newLetterAmmonium').addClass('SlideOut');
 			$('#newLetterPotasium').removeClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
 
 			$('#newCalciumInfo').addClass('SlideOut');
 			$('#newZincInfo').addClass('SlideOut');
@@ -915,6 +1029,9 @@ $(document).ready(function(){
 			$('#newNitratosInfo').addClass('SlideOut');
 			$('#newAmmoniumInfo').addClass('SlideOut');
 			$('#newPotasiumInfo').removeClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
 
 			$('#newCalciumInfo').removeClass('inFront');
 			$('#newZincInfo').removeClass('inFront');
@@ -926,6 +1043,186 @@ $(document).ready(function(){
 			$('#newNitratosInfo').removeClass('inFront');
 			$('#newAmmoniumInfo').removeClass('inFront');
 			$('#newPotasiumInfo').addClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
+		});
+
+		
+
+
+		$('#newNavBrix').click(function(event) {
+			$('#iconCalcium').removeClass('currentBlock');
+			$('#iconZinc').removeClass('currentBlock');
+			$('#icon8-24-0').removeClass('currentBlock');
+			$('#iconMKP').removeClass('currentBlock');
+			$('#iconUan32').removeClass('currentBlock');
+			$('#iconNS40').removeClass('currentBlock');
+			$('#iconMagnesium').removeClass('currentBlock');
+			$('#iconNitratos').removeClass('currentBlock');
+			$('#iconAmmonium').removeClass('currentBlock');
+			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').addClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
+
+			$('#newLetterCalcium').addClass('SlideOut');
+			$('#newLetterZinc').addClass('SlideOut');
+			$('#newLetter8-24-0').addClass('SlideOut');
+			$('#newLetterMKP').addClass('SlideOut');
+			$('#newLetterUan32').addClass('SlideOut');
+			$('#newLetterNS40').addClass('SlideOut');
+			$('#newLetterMagnesium').addClass('SlideOut');
+			$('#newLetterNitratos').addClass('SlideOut');
+			$('#newLetterAmmonium').addClass('SlideOut');
+			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').removeClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
+
+			$('#newCalciumInfo').addClass('SlideOut');
+			$('#newZincInfo').addClass('SlideOut');
+			$('#new8-24-0Info').addClass('SlideOut');
+			$('#newMKPInfo').addClass('SlideOut');
+			$('#newUan32Info').addClass('SlideOut');
+			$('#newNS40Info').addClass('SlideOut');
+			$('#newMagnesiumInfo').addClass('SlideOut');
+			$('#newNitratosInfo').addClass('SlideOut');
+			$('#newAmmoniumInfo').addClass('SlideOut');
+			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').removeClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
+
+			$('#newCalciumInfo').removeClass('inFront');
+			$('#newZincInfo').removeClass('inFront');
+			$('#new8-24-0Info').removeClass('inFront');
+			$('#newMKPInfo').removeClass('inFront');
+			$('#newUan32Info').removeClass('inFront');
+			$('#newNS40Info').removeClass('inFront');
+			$('#newMagnesiumInfo').removeClass('inFront');
+			$('#newNitratosInfo').removeClass('inFront');
+			$('#newAmmoniumInfo').removeClass('inFront');
+			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').addClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
+		});
+
+		$('#newNavBlueba').click(function(event) {
+			$('#iconCalcium').removeClass('currentBlock');
+			$('#iconZinc').removeClass('currentBlock');
+			$('#icon8-24-0').removeClass('currentBlock');
+			$('#iconMKP').removeClass('currentBlock');
+			$('#iconUan32').removeClass('currentBlock');
+			$('#iconNS40').removeClass('currentBlock');
+			$('#iconMagnesium').removeClass('currentBlock');
+			$('#iconNitratos').removeClass('currentBlock');
+			$('#iconAmmonium').removeClass('currentBlock');
+			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').addClass('currentBlock');
+			$('#iconCalciumBoro').removeClass('currentBlock');
+
+			$('#newLetterCalcium').addClass('SlideOut');
+			$('#newLetterZinc').addClass('SlideOut');
+			$('#newLetter8-24-0').addClass('SlideOut');
+			$('#newLetterMKP').addClass('SlideOut');
+			$('#newLetterUan32').addClass('SlideOut');
+			$('#newLetterNS40').addClass('SlideOut');
+			$('#newLetterMagnesium').addClass('SlideOut');
+			$('#newLetterNitratos').addClass('SlideOut');
+			$('#newLetterAmmonium').addClass('SlideOut');
+			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').removeClass('SlideOut');
+			$('#newLetterCalciumBoro').addClass('SlideOut');
+
+			$('#newCalciumInfo').addClass('SlideOut');
+			$('#newZincInfo').addClass('SlideOut');
+			$('#new8-24-0Info').addClass('SlideOut');
+			$('#newMKPInfo').addClass('SlideOut');
+			$('#newUan32Info').addClass('SlideOut');
+			$('#newNS40Info').addClass('SlideOut');
+			$('#newMagnesiumInfo').addClass('SlideOut');
+			$('#newNitratosInfo').addClass('SlideOut');
+			$('#newAmmoniumInfo').addClass('SlideOut');
+			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').removeClass('SlideOut');
+			$('#newCalciumBoroInfo').addClass('SlideOut');
+
+			$('#newCalciumInfo').removeClass('inFront');
+			$('#newZincInfo').removeClass('inFront');
+			$('#new8-24-0Info').removeClass('inFront');
+			$('#newMKPInfo').removeClass('inFront');
+			$('#newUan32Info').removeClass('inFront');
+			$('#newNS40Info').removeClass('inFront');
+			$('#newMagnesiumInfo').removeClass('inFront');
+			$('#newNitratosInfo').removeClass('inFront');
+			$('#newAmmoniumInfo').removeClass('inFront');
+			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').addClass('inFront');
+			$('#newCalciumBoroInfo').removeClass('inFront');
+		});
+
+		$('#newNavCalciumBoro').click(function(event) {
+			$('#iconCalcium').removeClass('currentBlock');
+			$('#iconZinc').removeClass('currentBlock');
+			$('#icon8-24-0').removeClass('currentBlock');
+			$('#iconMKP').removeClass('currentBlock');
+			$('#iconUan32').removeClass('currentBlock');
+			$('#iconNS40').removeClass('currentBlock');
+			$('#iconMagnesium').removeClass('currentBlock');
+			$('#iconNitratos').removeClass('currentBlock');
+			$('#iconAmmonium').removeClass('currentBlock');
+			$('#iconPotasium').removeClass('currentBlock');
+			$('#iconBrix').removeClass('currentBlock');
+			$('#iconBlueba').removeClass('currentBlock');
+			$('#iconCalciumBoro').addClass('currentBlock');
+
+			$('#newLetterCalcium').addClass('SlideOut');
+			$('#newLetterZinc').addClass('SlideOut');
+			$('#newLetter8-24-0').addClass('SlideOut');
+			$('#newLetterMKP').addClass('SlideOut');
+			$('#newLetterUan32').addClass('SlideOut');
+			$('#newLetterNS40').addClass('SlideOut');
+			$('#newLetterMagnesium').addClass('SlideOut');
+			$('#newLetterNitratos').addClass('SlideOut');
+			$('#newLetterAmmonium').addClass('SlideOut');
+			$('#newLetterPotasium').addClass('SlideOut');
+			$('#newLetterBrix').addClass('SlideOut');
+			$('#newLetterBlueba').addClass('SlideOut');
+			$('#newLetterCalciumBoro').removeClass('SlideOut');
+
+			$('#newCalciumInfo').addClass('SlideOut');
+			$('#newZincInfo').addClass('SlideOut');
+			$('#new8-24-0Info').addClass('SlideOut');
+			$('#newMKPInfo').addClass('SlideOut');
+			$('#newUan32Info').addClass('SlideOut');
+			$('#newNS40Info').addClass('SlideOut');
+			$('#newMagnesiumInfo').addClass('SlideOut');
+			$('#newNitratosInfo').addClass('SlideOut');
+			$('#newAmmoniumInfo').addClass('SlideOut');
+			$('#newPotasiumInfo').addClass('SlideOut');
+			$('#newBrixInfo').addClass('SlideOut');
+			$('#newBluebaInfo').addClass('SlideOut');
+			$('#newCalciumBoroInfo').removeClass('SlideOut');
+
+			$('#newCalciumInfo').removeClass('inFront');
+			$('#newZincInfo').removeClass('inFront');
+			$('#new8-24-0Info').removeClass('inFront');
+			$('#newMKPInfo').removeClass('inFront');
+			$('#newUan32Info').removeClass('inFront');
+			$('#newNS40Info').removeClass('inFront');
+			$('#newMagnesiumInfo').removeClass('inFront');
+			$('#newNitratosInfo').removeClass('inFront');
+			$('#newAmmoniumInfo').removeClass('inFront');
+			$('#newPotasiumInfo').removeClass('inFront');
+			$('#newBrixInfo').removeClass('inFront');
+			$('#newBluebaInfo').removeClass('inFront');
+			$('#newCalciumBoroInfo').addClass('inFront');
 		});
 	//////////////////////////////// END PRODUCTOS NUEVO ////////////////////////////////
 
