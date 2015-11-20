@@ -73,8 +73,7 @@ window.setInterval(function photoA() {
 
 		intervalTrigger = 0;
 
-		console.log("Image Count: " + imageCount);
-		console.log("Total: " + total);
+		console.log("Current Image: " + imageCount);
 	}
 
 },1000);

@@ -182,6 +182,23 @@ textarea {
         right: 0;
         left: 0;
     }
+
+    .container{
+        position: absolute;
+        width: 876px;
+        margin: auto;
+        left: 0;
+        right: 0;
+        margin-top: 170px;
+    }
+
+    .indexWrapper .container{
+        margin-top: 230px;
+    }
+
+    .newsWrapper .container{
+        margin-top: 230px;
+    }
 /*/////////////// END MAIN WRAPPERS STYLE ///////////////*/
 
 /*/////////////// HEADER STYLE ///////////////////*/
@@ -189,7 +206,7 @@ textarea {
         /*background-image: url(../img/bg-gradient.png);*/
         position: absolute;
         width: 876px;
-        height: 130px;
+        height: 180px;
         margin: auto;
         left: 0;
         right: 0;
@@ -212,10 +229,11 @@ textarea {
     .mnbtn:hover {
         background-image: url(../img/pressed-menu.svg);
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     .header-menu ul{
-        margin-top: 36px;
+        margin-top: 15px;
     }
     .header-menu li{
         position: relative;
@@ -246,6 +264,7 @@ textarea {
     .pressed-menu{
         background-image: url(../img/pressed-menu.svg);
         background-position: center;
+        background-repeat: no-repeat;
     }
 
     /*.slogan{
@@ -257,22 +276,17 @@ textarea {
         bottom: -85px;
     }*/
 
+    .header-menu .dotline{
+        margin-top: 55px;
+    }
+
     .dotline{
-        margin-top: -10px;
+        margin-top: 5px;
     }
 /*/////////////// END HEADER STYLE ///////////////*/
 
 
 /*/////////////// HOME STYLE ///////////////*/
-    .container{
-        position: absolute;
-        width: 876px;
-        margin: auto;
-        left: 0;
-        right: 0;
-        margin-top: 170px;
-    }
-
     .main-image{
         position: relative;
         width: 100%;
@@ -347,10 +361,7 @@ textarea {
         position: relative;
         width: 876px;
         height: 293px;
-        overflow: scroll;
-        /* ==========================================================================
-        FINISH THE HOME SCROLL!!!
-       ========================================================================== */
+        overflow: hidden;
         z-index: 1;
         display: inline-block;
     }
@@ -422,6 +433,14 @@ textarea {
     .switch span{
         cursor: pointer;
     }
+
+    .indexWrapper .barrafinal{
+        top: 905px;
+    }
+
+    .indexWrapper .footprint{
+        top: 940px;
+    }
 /*/////////////// END HOME STYLE ///////////////*/
 
 
@@ -440,7 +459,7 @@ textarea {
 .rightboxnos{
     position: absolute;
     width: 572px;
-    height: 289px;
+    height: 340px;
     margin-top: 89px;
     margin-left: 304px;
 }
@@ -560,14 +579,15 @@ textarea {
 /* =========== BENEFICIOS ============================== */
     /* =========== DISTRIBUCIÓN ============================== */
         #pho-distribucion{
-            width: 646px;
+            width: 100%;
             height: 340px;
         }
 
         #pho-distribucion img{
             position: absolute;
-            width: 100%;
-            left: 0;
+            width: 574px;
+            margin: auto;
+            left: 0; right: 0;
 
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
@@ -578,7 +598,7 @@ textarea {
 
         #dis-nav{
             position: absolute;
-            width: 300px;
+            width: 350px;
             height: 70px;
             margin: auto;
             left: 0; right: 0; bottom: 0;
@@ -589,7 +609,7 @@ textarea {
             position: absolute;
             margin: auto;
             left: 0; right: 0;
-            width: 75%;
+            width: 65%;
             height: 30px;
             line-height: 30px;
             color: #fff;
@@ -676,7 +696,7 @@ textarea {
     .outindex{
         position: absolute;
         margin: auto;
-        top: 700px;
+        top: 710px;
         right: 0;
         left: 0;
         height: 30px;
@@ -692,7 +712,7 @@ textarea {
     }
 
     .altomenus{
-        height: 230px !important;
+        height: 340px !important;
     }
 
     .inindex{
@@ -721,7 +741,7 @@ textarea {
 
     .subtitles {
         position: relative;
-        width: 275px;
+        width: 280px;
         height: 26px;
         background-image: url(../img/subtitle-bg.svg);
         color: #fff;
@@ -785,7 +805,7 @@ textarea {
         margin-bottom: 0;
         margin-top: 0; 
         height: 40px;
-        overflow: scroll;
+        overflow: hidden;
         cursor: pointer;
     }
 
@@ -801,7 +821,7 @@ textarea {
     .mid-box-text{
         width: 140px;
         height: 100%;
-        overflow: scroll;
+        overflow: hidden;
         color: #fff;
         padding-left: 10px;
         text-align: justify;
@@ -821,7 +841,7 @@ textarea {
     .promos p{
         width: 140px;
         height: 178px;
-        overflow: scroll;
+        overflow: hidden;
     }
 
     .promos p:hover{
@@ -829,21 +849,22 @@ textarea {
     }
 
     .tanque{
-        height: 78px;
+        height: 120px;
         position: absolute;
         margin-left: 190px;
-        margin-top: -81px;
+        margin-top: -140px;
     }
 
     .tanque2{
-        height: 78px;
+        height: 120px;
         position: absolute;
         margin-left: 190px;
-        margin-top: -78px;
+        margin-top: -129px;
     }
 
     .tanque3{
         position: absolute;
+        width: 130px;
         float: left;
         margin-left: 10px;
         margin-top: -9px;
@@ -958,13 +979,17 @@ textarea {
         position: absolute;
         margin-left: 589px;
     }
+
+    .logoIrapuato{
+        width: 100%;
+    }
 /* ==========  END FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES) =================== */
 
 
 /* =========== PRODUCTOS ============================== */
         .products-wrapper{
             width: 876px;
-            height: 611px;
+            height: 560px;
             margin-bottom: 30px;
         }
 
@@ -1271,6 +1296,7 @@ textarea {
                 position: absolute;
                 width: 100%;
                 height: 100%;
+                top: 60px;
                 background: url('../img/product-vignete.png');
                 -ms-background-position-x: -50px;
                 background-position-x: -50px;
@@ -1302,7 +1328,7 @@ textarea {
                     width: 210px;
                     height: 300px;
                     top: 80px;
-                    left: 112px;
+                    left: 80px;
                 }
 
                 .productsInfoWrapper{
@@ -1310,7 +1336,7 @@ textarea {
                     width: 325px;
                     height: 385px;
                     top: 80px;
-                    left: 366px;
+                    left: 320px;
                 }
 
                     .productsName{
@@ -1644,6 +1670,18 @@ textarea {
                         text-align: right;
                         text-shadow: 2px 2px 0 rgba(50,50,50,0.3);
                     }
+
+                .productWrapper .outindex{
+                    top: 870px;
+                }
+
+                .productWrapper .barrafinal{
+                    top: 905px;
+                }
+
+                .productWrapper .footprint{
+                    top: 935px;
+                }
 /* ========== END PRODUCTOS NEW DESIGN ============================= */
 
 
@@ -1702,9 +1740,22 @@ textarea {
     .midboxcon{
         position: absolute;
         width: 246px;
-        height: 45px;
+        height: 465px;
         margin-top: 67px;
         margin-left: 311px;
+        overflow: hidden;
+    }
+
+    .midboxcon img{
+        position: absolute;
+        height: 100%;
+        margin: auto;
+        left: 50%;
+        -webkit-transform: translate(-50%,0);
+           -moz-transform: translate(-50%,0);
+            -ms-transform: translate(-50%,0);
+             -o-transform: translate(-50%,0);
+                transform: translate(-50%,0);
     }
 
 
@@ -1833,7 +1884,7 @@ textarea {
         font-family: FlorensReg;
         color: #fff;
         margin: auto;
-        top: 735px;
+        top: 745px;
         left: 0;
         right: 0;
         background-image: url(../img/subtitle-bg.svg);
@@ -1845,7 +1896,7 @@ textarea {
 
 
     .bfoutindex{
-        top: 935px;
+        top: 1055px;
     }
 
     .bfinProducts{
@@ -1857,12 +1908,12 @@ textarea {
     }
 
     .openbfincontact{
-        top: 1035px !important;
+        top: 1155px !important;
     }
 
     .footprint{
         position: absolute;
-        width: 200px;
+        width: 300px !important;
         height: 30px;
         line-height: 30px;
         text-transform: uppercase;
@@ -1872,7 +1923,7 @@ textarea {
         margin: auto;
         left: 0;
         right: 0;
-        top: 765px;
+        top: 775px;
         color: #fff;
         margin-bottom: 30px;
         -webkit-transition: top 0.8s; /* Safari */
@@ -1908,7 +1959,7 @@ textarea {
     }
 
     .fpoutindex{
-        top: 965px;
+        top: 1095px;
     }
 
     .fpinProducts{
@@ -1920,12 +1971,20 @@ textarea {
     }
 
     .openfpincontact{
-        top: 1065px !important;
+        top: 1185px !important;
     }
 
     .lucky-cond{
         max-width: 25px;
         min-width: 25px;
+    }
+
+    .productWrapper .bfoutindex{
+        top: 1255px;
+    }
+
+    .productWrapper .fpoutindex{
+        top: 1295px;
     }
 /* ========= END Footer ========================================= */
 
@@ -1968,18 +2027,116 @@ textarea {
         #mobile{}
     }
 
-    @media (min-width: 768px){
-        #tablet{}
+    /*TABLET*/
+    @media (min-width: 768px) and (max-width: 991px){
+        
+        
+        /*GENERAL WRAPPERS*/
+            #wrapper{
+                width: 768px;
+                height: 1160px;
+                overflow: hidden;
+            }
+
+            .container{
+                width: 100%;
+            }
+        /*END GENERAL WRAPPERS*/
+
+        /*HEADER STYLE*/
+            .header-menu{
+                width: 100%;
+            }
+
+            .header-menu li{
+                width: 75px;
+            }
+        /*END HEADER STYLE*/
+
+        /*HOME STYLE*/
+            .imgwindow{
+                width: 764px;
+                height: 256px;
+            }
+
+            .inimage{
+                width: 100%;
+            }
+
+            .inimage img{
+                width: 100%;
+            }
+
+            .main-image{
+                height: 300px;
+            }
+
+            .switch ul{
+                width: 145px;
+                height: 25px;
+                margin-top: -32px;
+            }
+
+            .switch li{
+                margin-top: 2px;
+                margin-right: 5px;
+                font-size: 12px;
+            }
+        /*END HOME STYLE*/
+
+        /*FOOTER STYLE*/
+            .downwrapper{
+                width: 100%;
+            }
+
+            .inindex{
+                height: 350px;
+            }
+
+            .downboxes{
+                width: 33.33%;
+            }
+
+            .destacados{
+                margin-left: 33.33%;
+            }
+
+            .promos{
+                margin-left: 66.66%;
+            }
+
+            .logoIrapuato{
+                margin-bottom: 20px;
+            }
+
+            .third-box-text{
+                width: 90%;
+            }
+
+            .corner{
+                margin-top: -20px;
+            }
+
+            .corner2{
+                margin-top: -9px;
+            }
+
+            .tanque, .tanque2{
+                margin-left: 160px;
+            }
+        /*END FOOTER STYLE*/
+        
     }
 
-                @media (min-width: 992px){
-                    #laptops{}
-                    /*DONE*/
-                }
+    /*LAPTOPS*/ 
+    /*DONE*/
+    @media (min-width: 992px){
+    }
 
+
+    /*DESKTOP*/ 
+    /*DONE*/
     @media (min-width: 1200px){
-        #desktops{}
-
         /*GENERAL WRAPPERS*/
             #wrapper{
                 position: relative;
@@ -1993,7 +2150,7 @@ textarea {
             }
 
             .container{
-                margin-top: 25px;
+                margin-top: 25px !important;
             }
         /*END GENERAL WRAPPERS*/
 
@@ -2002,6 +2159,10 @@ textarea {
             .header-menu{
                 margin-top: 0px;
                 height: 180px;
+            }
+
+            .header-menu .dotline{
+                margin-top: 5px;
             }
 
             .header-menu ul{
@@ -2052,6 +2213,8 @@ textarea {
                 margin-top: -21px;
 
             }
+
+
         /*END HOME STYLE*/
 
         /* NOSOTROS STYLE */
@@ -2238,25 +2401,25 @@ textarea {
                 margin-top: 15px;
              }
 
-            .outindex{
+             .outindex{
                 position: relative;
-                top: 0;
-            }
+                top: 0 !important;
+             }
 
-            .barrafinal{
-                top: 20px;
-            }
+             .barrafinal{
+                top: 20px !important;
+             }
 
-            .footprint{
-                top: 30px;
-                margin-bottom: 10px;
-            }
-
-            .bfincontact, .fpincontact{
+             .footprint{
                 top: 30px !important;
-            }
-        /* END FOOTER MENU STYLE */
+                margin-bottom: 10px;
+                margin-top: 15px;
+             }
 
+             .bfincontact, .fpincontact{
+                top: 30px !important;
+             }
+        /* END FOOTER MENU STYLE */
     }
 /*/////////////// END RESPONSIVE CLASSES ///////////////*/
 
