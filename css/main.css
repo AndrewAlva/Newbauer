@@ -2034,12 +2034,19 @@ textarea {
         /*GENERAL WRAPPERS*/
             #wrapper{
                 width: 768px;
-                height: 1160px;
-                overflow: hidden;
+                height: 1320px;
             }
 
             .container{
                 width: 100%;
+            }
+
+            .dotline{
+                width: 100%;
+            }
+
+            .downwrapper, .barrafinal, .footprint{
+                position: relative;
             }
         /*END GENERAL WRAPPERS*/
 
@@ -2068,6 +2075,7 @@ textarea {
             }
 
             .main-image{
+                width: 766px;
                 height: 300px;
             }
 
@@ -2082,7 +2090,116 @@ textarea {
                 margin-right: 5px;
                 font-size: 12px;
             }
+
+            .indexContainer .pho-box{
+                width: 100%;
+            }
         /*END HOME STYLE*/
+
+        /*NOSOTROS STYLE*/
+            .noswrapper{
+                width: 768px;
+            }
+
+            .rightboxnos{
+                width: 464px;
+            }
+
+            .pho-box{
+                width: 462px;
+            }
+
+            .leftboxnos p, .benlist li{
+                padding-left: 10px;
+            }
+        /*END NOSOTROS STYLE*/
+
+        /*BENEFICIOS STYLE*/
+
+            #pho-distribucion {
+                width: 462px;
+                overflow: hidden;
+            }
+
+            #pho-distribucion img{
+                width: 100%;
+                top: 50px;
+            }
+        /*END BENEFICIOS STYLE*/
+
+        /*PRODUCTOS STYLE*/
+            #fullwrapper .productWrapper{
+                height: 1480px;
+            }
+
+            .products-wrapper{
+                width: 100%;
+            }
+
+            .productsLetterBG{
+                width: 200px;
+            }
+
+            .productsPhoto{
+                width: 160px;
+                top: 120px;
+                left: 30px;
+            }
+
+            .productsPhoto img{
+                width: 100%;
+            }
+
+            .productsInfoWrapper{
+                left: 220px;
+            }
+
+            .productWrapper .bfoutindex{
+                top: 885px;
+            }
+
+            .productWrapper .fpoutindex{
+                top: 895px;
+            }
+        /*END PRODUCTOS STYLE*/
+
+        /*NOTICIAS STYLE*/
+            .midbox-news{
+                width: 33.33%;
+            }
+
+            .rightbox-news{
+                width: 205px;
+                margin-left: 73%;
+            }
+
+            .rightbox-news img{
+                width: 100%;
+            }
+
+            .noticia p{
+                width: 100%;
+            }
+        /*END NOTICIAS STYLE*/
+
+        /*CONTACTO STYLE*/
+            .contactWrapper{
+                height: 1450px !important;
+            }
+
+            .midboxcon{
+                width: 138px;
+            }
+
+            .openbfincontact{
+                top: 835px !important;
+            }
+
+            .openfpincontact{
+                top: 845px !important;
+            }
+
+        /*END CONTACTO STYLE*/
 
         /*FOOTER STYLE*/
             .downwrapper{
@@ -2121,6 +2238,10 @@ textarea {
                 margin-top: -9px;
             }
 
+            .corner3{
+                margin-top: 281px;
+            }
+
             .tanque, .tanque2{
                 margin-left: 160px;
             }
@@ -2129,7 +2250,25 @@ textarea {
                margin-left: -90px;
                margin-top: 90px; 
             }
+
+            .barrafinal{
+                width: 100%;
+            }
+
+            .bfoutindex{
+                top: 725px;
+            }
+
+            .fpoutindex{
+                top: 750px;
+            }
         /*END FOOTER STYLE*/
+
+        /*ANIMATIONS STYLE*/
+            .SlideOut{
+                left: -50px !important;
+            }
+        /*END ANIMATIONS STYLE*/
         
     }
 
