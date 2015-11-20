@@ -2056,7 +2056,7 @@ textarea {
         /*HOME STYLE*/
             .imgwindow{
                 width: 764px;
-                height: 256px;
+                height: 254px;
             }
 
             .inimage{
@@ -2123,6 +2123,11 @@ textarea {
 
             .tanque, .tanque2{
                 margin-left: 160px;
+            }
+
+            .tanque3{
+               margin-left: -90px;
+               margin-top: 90px; 
             }
         /*END FOOTER STYLE*/
         
