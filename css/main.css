@@ -291,7 +291,7 @@ textarea {
         position: relative;
         width: 100%;
         height: 33vw;
-        max-height: 475px;
+        max-height: 327.5px;
     }
 
     #homeSlogan{
@@ -970,6 +970,7 @@ textarea {
 
     .logoIrapuato{
         width: 100%;
+        max-width: 400px;
     }
 /* ==========  END FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES) =================== */
 
@@ -1984,6 +1985,7 @@ textarea {
 
 /* ========= MOBILE MENU ========================================= */
     #mobNav{
+        display: none;
         position: fixed;
         width: 100%;
         height: 50px;
@@ -2087,6 +2089,9 @@ textarea {
         }
 
         /*MOBILE NAV*/
+            #mobNav{
+                display: block;
+            }
         /*END MOBILE NAV*/
 
         /*GENERAL WRAPPERS*/
@@ -2099,6 +2104,7 @@ textarea {
                 margin-top: 0;
                 width: 100%;
                 height: 50%;
+                max-height: 240px;
             }
 
             .container{
@@ -2797,6 +2803,10 @@ textarea {
         /*END HEADER STYLE*/
 
         /*HOME STYLE*/
+            .main-image{
+                max-height: 475px;
+            }
+            
             .imgwindow{
                 width: 100%;
                 height: 30vw;
