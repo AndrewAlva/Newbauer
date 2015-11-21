@@ -1488,12 +1488,19 @@ textarea {
             top: 80px;
             right: 0;
             z-index: 1000000000;
+
+            -webkit-transition: all .8s ease-in-out;
+               -moz-transition: all .8s ease-in-out;
+                -ms-transition: all .8s ease-in-out;
+                 -o-transition: all .8s ease-in-out;
+                    transition: all .8s ease-in-out;
         }
 
             .productsNavBars{
                 position: relative;
                 width: 35px;
                 height: 35px;
+                left: 0;
                 float: right;
                 overflow: hidden;
                 cursor: pointer;
@@ -1980,9 +1987,9 @@ textarea {
         position: fixed;
         width: 100%;
         height: 50px;
-        background-color: #8ec44b;
-        opacity: .8;
-        z-index: 1000000000;
+        background-color: #000;
+        border-bottom: 1px solid #8ec44b;
+        z-index: 1000000000000000000000000000000000000;
         font-family: 'FlorensBol';
         text-transform: uppercase;
 
@@ -1995,20 +2002,23 @@ textarea {
 
     #logoMob{
         position: absolute;
-        width: 60px;
-        height: 30px;
-        top: 10px;
+        width: 105px;
+        height: 22px;
+        top: 15px;
         left: 15px;
-        background-color: #fff;
+        z-index: 1;
+    }
+
+    #logoMob img{
+        width: 100%;
     }
 
     #burguerIcon{
         position: absolute;
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         top: 10px;
         right: 15px;
-        background-color: #fff;
         z-index: 1;
     }
 
@@ -2201,8 +2211,24 @@ textarea {
         /*END BENEFICIOS*/
 
         /*PRODUCTOS STYLING*/
+            .productWrapper .container{
+                overflow: hidden;
+                height: 1200px;
+            }
+
+            .products-wrapper{
+                width: 100%;
+            }
+
+            .productsInfoWrapper{
+                width: 90%;
+                left: 0;
+                padding-left: 15px;
+                top: 420px;
+            }
             #bidonesNavWrapper{
-                right: -35px;
+                right: -45px;
+                top: 90px;
             }
 
             .productsNavBars{
@@ -2213,11 +2239,153 @@ textarea {
                 position: fixed;
                 width: 35px;
                 height: 35px;
-                background-color: red;
+                background-color: #8ec44b;
                 right: 0;
                 top: 80px;
+                z-index: 1000000000000000;
+                box-shadow: -1px 1px 10px #000;
+
+                -webkit-transition: all .8s ease-in-out;
+                   -moz-transition: all .8s ease-in-out;
+                    -ms-transition: all .8s ease-in-out;
+                     -o-transition: all .8s ease-in-out;
+                        transition: all .8s ease-in-out;
+            }
+
+            .showProductsNav{
+                right: 174px !important;
+            }
+
+            .productsNavBars{
+                opacity: 1;
+            }
+
+            .productsNavBars:hover{
+                left: -10px;
+            }
+
+            .productWrapper .outindex{
+                top: 1070px;
+                z-index: 1000000000;
+            }
+
+            .productWrapper .barrafinal{
+                top: 1090px;
+                z-index: 1000000000;
+            }
+
+            .productWrapper .footprint{
+                top: 1100px;
+                z-index: 1000000000;
             }
         /*END PRODUCTS*/
+
+        /*DISTRIBUIDORES STYLING*/
+            .dishtml .rightboxnos{
+                margin-top: 120px;
+                max-width: 300px;
+            }
+
+            .dishtml .outindex{
+                top: 650px;
+            }
+
+            .dishtml .barrafinal{
+                top: 655px;
+            }
+
+            .dishtml .footprint{
+                top: 665px;
+            }
+        /*END DISTRIBUIDORES*/
+
+        /*NOTICIAS STYLING*/
+            .newsWrapper .container{
+                margin-top: 80px;
+            }
+
+            .dw-on-news{
+                position: absolute;
+                height: 100px !important;
+                z-index: 100;
+            }
+
+            .midbox-news{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 50px;
+            }
+
+            .noticia p{
+                width: 90%;
+                padding: 0 15px;
+            }
+
+            .rightbox-news{
+                width: 100%;
+                margin-left: 0;
+                margin-top: 400px;
+            }
+
+            .rightbox-news img{
+                position: absolute;
+                margin: auto;
+                left: 0; right: 0;
+            }
+
+            .newsWrapper .barrafinal{
+                top: 1000px;
+            }
+
+            .newsWrapper .footprint{
+                top: 1010px;
+            }
+        /*END STYLING*/
+
+        /*CONTACTO STYLING*/
+            .leftboxcon{
+                position: relative;
+                width: 100%;
+            }
+
+            .leftboxcon p{
+                padding-left: 24px;
+            }
+
+            .midboxcon{
+                position: relative;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .rightboxcon{
+                position: relative;
+                margin-left: 0;
+                right: 0;
+                width: 100%;
+            }
+
+            .rightboxcon input, .rightboxcon textarea{
+                width: 90%;
+            }
+
+            input[type="submit"]{
+                right: 30px;
+                position: absolute;
+            }
+
+            .incontact{
+                top: 1600px !important;
+            }
+
+            .bfincontact{
+                top: 1605px !important;
+            }
+
+            .fpincontact{
+                top: 1615px !important;
+            }
+        /*END CONTACTO*/
 
         /*FOOTER STYLING*/
             .downwrapper{
@@ -2295,7 +2463,7 @@ textarea {
             }
 
             .altomenus{
-                height: 830px !important;
+                height: auto !important;
             }
         /*END FOOTER STYLING*/
 
@@ -2878,6 +3046,27 @@ textarea {
     display: none;
 }
 
+.burguerLines{
+    position: absolute;
+    width: 75%;
+    height: 2px;
+    margin: auto;
+    left: 0; right: 0;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.burguerLines:first-child{
+    top: 30%;
+}
+
+.burguerLines:nth-child(2){
+    top: 0; bottom: 0;
+}
+
+.burguerLines:last-child{
+    bottom: 30%;
+}
 
 
 

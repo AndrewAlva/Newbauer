@@ -16,7 +16,9 @@ $(document).ready(function(){
 	// MOB NAV INTERACTION
 		$('#burguerIcon').click(function() {
 			$('#mobNav').toggleClass('extendedNav');
-			$('.mobNavList').toggleClass('hidden');
+			setTimeout(function(){
+				$('.mobNavList').toggleClass('hidden');
+			},400);
 		});
 	// END MOB NAV
 
@@ -1342,6 +1344,24 @@ $(document).ready(function(){
 			$('#newCalciumBoroInfo').addClass('inFront');
 		});
 	//////////////////////////////// END PRODUCTOS NUEVO ////////////////////////////////
+
+	// PRODUCTOS NAV MOBILE INTERACTION
+		$('#productsBurguer').click(function() {
+			$('#bidonesNavWrapper').toggleClass('showProductsNav');
+			$('html, body').animate({
+		    	scrollTop: $(".container").offset().top
+		    }, 1000);
+		});
+
+		$('.productsNavBars').click(function() {
+			$('#bidonesNavWrapper').removeClass('showProductsNav');
+
+		});
+
+		$('#bidonesInfoWrapper').click(function() {
+			$('#bidonesNavWrapper').removeClass('showProductsNav');
+		});
+	// END INTERACTION
 
 
 
