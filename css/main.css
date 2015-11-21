@@ -193,11 +193,11 @@ textarea {
     }
 
     .indexWrapper .container{
-        margin-top: 230px;
+        margin-top: 235px;
     }
 
     .newsWrapper .container{
-        margin-top: 230px;
+        margin-top: 235px;
     }
 /*/////////////// END MAIN WRAPPERS STYLE ///////////////*/
 
@@ -267,14 +267,14 @@ textarea {
         background-repeat: no-repeat;
     }
 
-    /*.slogan{
+    .slogan{
         position: absolute;
-        width: 210px;
-        height: 78px;
+        width: 307px;
+        height: 23px;
         margin: auto;
         left: 0; right: 0;
-        bottom: -85px;
-    }*/
+        bottom: -25px;
+    }
 
     .header-menu .dotline{
         margin-top: 55px;
@@ -2080,6 +2080,7 @@ textarea {
 
 /*/////////////// RESPONSIVE CLASSES ///////////////*/
     /*MOBILE*/
+    /*DONE*/
     @media (max-width: 767px){
         .header-menu{
             display: none !important;
@@ -2091,6 +2092,12 @@ textarea {
         /*MOBILE NAV*/
             #mobNav{
                 display: block;
+            }
+
+            .slogan{
+                width: 230px;
+                bottom: -21px;
+                right: 100%;
             }
         /*END MOBILE NAV*/
 
@@ -2806,7 +2813,7 @@ textarea {
             .main-image{
                 max-height: 475px;
             }
-            
+
             .imgwindow{
                 width: 100%;
                 height: 30vw;
