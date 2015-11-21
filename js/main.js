@@ -13,6 +13,13 @@ $(document).ready(function(){
 		});
 	// END LINKS
 
+	// MOB NAV INTERACTION
+		$('#burguerIcon').click(function() {
+			$('#mobNav').toggleClass('extendedNav');
+			$('.mobNavList').toggleClass('hidden');
+		});
+	// END MOB NAV
+
 	// FOOTER HEIGHT ANIMATION
 		$('.shiftheight').click(function(event) {
 			$('.outindex').toggleClass('altomenus');
@@ -31,6 +38,9 @@ $(document).ready(function(){
 
 			// corner 3 hidding
 			$('.corner3').toggleClass('crystal');
+
+			//mobile hide footer pre title
+			$('.onlyMob').toggleClass('hidden');
 
 		});
 	// END FOOTER HEIGHT ANIMATION

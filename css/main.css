@@ -444,134 +444,135 @@ textarea {
 /*/////////////// END HOME STYLE ///////////////*/
 
 
+/*/////////////// INNER BOXES STYLE ///////////////*/
+    .leftboxnos{
+        position: absolute;
+        width: 304px;
+        height: 289px;
+        margin-top: 89px;
+        font-family: FlorensReg;
 
+    }
 
+    .rightboxnos{
+        position: absolute;
+        width: 572px;
+        height: 340px;
+        margin-top: 89px;
+        margin-left: 304px;
+    }
 
-.leftboxnos{
-    position: absolute;
-    width: 304px;
-    height: 289px;
-    margin-top: 89px;
-    font-family: FlorensReg;
+    .leftboxnos h2{
+        margin-top: 42px;
+        width: 177px;
+        height: 31px;
+        background-color: #8ec44b;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 22px;
+        text-align: center;
+        line-height: 31px;
+        
+    }
 
-}
+    .noswrapper{
+        position: relative;
+        width: 876px;
+        height: 400px;
+        margin: auto;
+        right: 0;
+        left: 0;
+    }
 
-.rightboxnos{
-    position: absolute;
-    width: 572px;
-    height: 340px;
-    margin-top: 89px;
-    margin-left: 304px;
-}
+    .subtitlenos{
+        background-color: #3f3f3f;
+        width: 255px;
+        height: 50px;
+        line-height: 16px;
+        text-transform: uppercase;
+        font-size: 11px;
+        padding-left: 24px;
+        margin-top: -18px;
+    }
 
-.leftboxnos h2{
-    margin-top: 42px;
-    width: 177px;
-    height: 31px;
-    background-color: #8ec44b;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 22px;
-    text-align: center;
-    line-height: 31px;
-    
-}
+    .subtitlenos ul{
+        padding-top: 10px;
+    }
 
-.noswrapper{
-    position: relative;
-    width: 876px;
-    height: 400px;
-    margin: auto;
-    right: 0;
-    left: 0;
-}
+    .subtitlenos li{
+        display: inline-block;
+    }
 
-.subtitlenos{
-    background-color: #3f3f3f;
-    width: 255px;
-    height: 50px;
-    line-height: 16px;
-    text-transform: uppercase;
-    font-size: 11px;
-    padding-left: 24px;
-    margin-top: -18px;
-}
+    .subtitlenos {
+        text-decoration: none;
 
-.subtitlenos ul{
-    padding-top: 10px;
-}
+    }
 
-.subtitlenos li{
-    display: inline-block;
-}
+    .act {
+        color: #fff;
+        cursor: pointer;
+    }
 
-.subtitlenos {
-    text-decoration: none;
+    .noact {
+        color: #727272;
+        cursor: pointer;
+    }
 
-}
+    .noact:hover{
+        color: #8ec44b;
+    }
 
-.act {
-    color: #fff;
-    cursor: pointer;
-}
+    .leftboxnos p, .benlist li{
+        font-size: 12px;
+        margin-top: 17px;
+        width: 280px;
+        color: #fff;
+    }
 
-.noact {
-    color: #727272;
-    cursor: pointer;
-}
+    .benlist li{
+        margin-left: 15px;
+        margin-bottom: -15px;
+    }
 
-.noact:hover{
-    color: #8ec44b;
-}
+    .benlist p{
+        margin-top: 30px;
+    }
 
-.leftboxnos p, .benlist li{
-    font-size: 12px;
-    margin-top: 17px;
-    width: 280px;
-    color: #fff;
-}
+    .pho-box{
+        border: 1px solid #8ec44b;
+    }
 
-.benlist li{
-    margin-left: 15px;
-    margin-bottom: -15px;
-}
+    .distTitle h2{
+        text-align: left !important;
+        padding-left: 24px !important;
+        width: 200px !important;
+    }
 
-.benlist p{
-    margin-top: 30px;
-}
-
-.pho-box{
-    border: 1px solid #8ec44b;
-}
-
-.distTitle h2{
-    text-align: left !important;
-    padding-left: 24px !important;
-    width: 200px !important;
-}
-
-#distribuidores .benlist p{
-    margin-top: 20px !important;
-}
+    #distribuidores .benlist p{
+        margin-top: 20px !important;
+    }
 
 
 
 
-/*////////////////////////////////////////////////////////////////////////
-////////////////////////SHIFTING CONTENT////////////////////////
-////////////////////////////////////////////////////////////////////////*/
+    /*////////////////////////////////////////////////////////////////////////
+    ////////////////////////SHIFTING CONTENT////////////////////////
+    ////////////////////////////////////////////////////////////////////////*/
 
-#discontent, #misioncontent, #visioncontent, #filoscontent, #valorescontent{
-    display: none;
-}
+    #discontent, #misioncontent, #visioncontent, #filoscontent, #valorescontent{
+        display: none;
+    }
 
-#pho-mision, #pho-vision, #pho-filosofia, #pho-valores{
-    display: none;
-}
+    #pho-mision, #pho-vision, #pho-filosofia, #pho-valores{
+        display: none;
+    }
 
-#pho-distribucion{
-    display: none;
-}
+    #pho-distribucion{
+        display: none;
+    }
+/*/////////////// END INNER BOXES STYLE ///////////////*/
+
+
 
 
 
@@ -677,19 +678,6 @@ textarea {
         }
     /* =========== END DISTRIBUCIÓN ============================== */
 /* =========== END BENEFICIOS ============================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========  FOOTER (NOTICIAS, PRODUCTOS DESTACADOS Y PROMOCIONES) ======================= */
@@ -1146,10 +1134,6 @@ textarea {
             border: 1px solid #035f1a;
         }
 /* =========== END PRODUCTOS ========================== */
-
-
-
-
 
 /* ========== PRODUCTOS NEW DESIGN ================================= */
         .inProducts{
@@ -1991,7 +1975,67 @@ textarea {
 
 
 
+/* ========= MOBILE MENU ========================================= */
+    #mobNav{
+        position: fixed;
+        width: 100%;
+        height: 50px;
+        background-color: #8ec44b;
+        opacity: .8;
+        z-index: 1000000000;
+        font-family: 'FlorensBol';
+        text-transform: uppercase;
 
+        -webkit-transition: all .8s ease-in-out;
+           -moz-transition: all .8s ease-in-out;
+            -ms-transition: all .8s ease-in-out;
+             -o-transition: all .8s ease-in-out;
+                transition: all .8s ease-in-out;
+    }
+
+    #logoMob{
+        position: absolute;
+        width: 60px;
+        height: 30px;
+        top: 10px;
+        left: 15px;
+        background-color: #fff;
+    }
+
+    #burguerIcon{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 15px;
+        background-color: #fff;
+        z-index: 1;
+    }
+
+    #mobNav ul{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #mobNav li{
+        position: relative;
+        width: 100%;
+        height: 14.285%;
+        line-height: 14.285vh;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #mobNav a{
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .extendedNav{
+        height: 100% !important;
+    }
+/* ========= END MOBILE MENU ========================================= */
 
 
 
@@ -2023,11 +2067,258 @@ textarea {
 
 
 /*/////////////// RESPONSIVE CLASSES ///////////////*/
+    /*MOBILE*/
     @media (max-width: 767px){
-        #mobile{}
+        .header-menu{
+            display: none !important;
+            visibility: hidden !important;
+            z-index: -1 !important;
+            opacity: 0 !important;
+        }
+
+        /*MOBILE NAV*/
+        /*END MOBILE NAV*/
+
+        /*GENERAL WRAPPERS*/
+            #wrapper{
+                width: 100%;
+                height: 100%;
+            }
+
+            .indexWrapper .container{
+                margin-top: 0;
+                width: 100%;
+                height: 50%;
+            }
+
+            .container{
+                width: 100%;
+                margin-top: -10px;
+            }
+        /*END GENERAL WRAPPERS*/
+
+        /*HOME STYLING*/
+            .main-image{
+                width: 100%;
+                height: 100%;
+            }
+
+            .imgwindow{
+                width: 100%;
+                height: 100%;
+            }
+
+            .inimage{
+                width: 100%;
+                height: 100%;
+            }
+
+            .inimage img{
+                position: absolute;
+                height: 100%;
+            }
+
+            .main-image .pho-box{
+                border-left: none;
+                border-right: none;
+                
+            }
+
+            .main-image .dotline{
+                width: 100%;
+            }
+
+            .tagLineWrapper{
+                width: 100%;
+            }
+
+            #homeTagLine-4 .line1{
+                width: 295px !important;
+            }
+        /*END HOME STYLING*/
+
+        /*NOSOTROS STYLING*/
+            .noswrapper{
+                width: 100%;
+            }
+
+            .leftboxnos{
+                position: relative;
+                width: 90%;
+
+            }
+
+            .rightboxnos{
+                width: 90%;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: -40px;
+                left: 0; right: 0;
+                
+                z-index: -1;
+            }
+
+            .rightboxnos img{
+                width: 100%;
+            }
+
+            .leftboxnos p, .benlist li{
+                padding-left: 15px;
+                width: 100%;
+            }
+        /*END NOSOTROS*/
+
+        /*BENEFICIOS STYLING*/
+            .benhtml .rightboxnos{
+                margin-top: 100px;
+                height: 200px;
+                max-width: 312px;
+            }
+
+            .benhtml .outindex{
+                top: 710px;
+            }
+
+            .benhtml .barrafinal{
+                top: 715px;
+            }
+
+            .benhtml .footprint{
+                top: 725px;
+            }
+
+            #pho-distribucion{
+                height: 200px;
+            }
+
+            #pho-distribucion img{
+                width: 100%;
+            }
+
+            #dis-nav{
+                width: 100%;
+            }
+        /*END BENEFICIOS*/
+
+        /*PRODUCTOS STYLING*/
+            #bidonesNavWrapper{
+                right: -35px;
+            }
+
+            .productsNavBars{
+                float: left;
+            }
+
+            #productsBurguer{
+                position: fixed;
+                width: 35px;
+                height: 35px;
+                background-color: red;
+                right: 0;
+                top: 80px;
+            }
+        /*END PRODUCTS*/
+
+        /*FOOTER STYLING*/
+            .downwrapper{
+                width: 100%;
+            }
+
+            .downwrapper .dotline{
+                width: 100%;
+            }
+
+            .inindex{
+                top: 40px;
+                height: auto;
+            }
+
+            .downboxes{
+                position: relative;
+                width: 100%;
+            }
+
+            .destacados, .promos{
+                margin-left: 0;
+            }
+
+            .promos{
+                height: 250px;
+            }
+
+            .barrafinal{
+                position: relative;
+                width: 100%;
+                height: auto;
+                top: 565px;
+            }
+
+            .footprint{
+                position: relative;
+                width: 100%;
+                top: 575px;
+            }
+
+            .indexWrapper .barrafinal{
+                top: 1095px;
+            }
+
+            .indexWrapper .footprint{
+                top: 1110px;
+            }
+
+            .subtitles{
+                width: 100%;
+            }
+
+            .third-box-text{
+                width: 90%;
+            }
+
+            .mid-box-text{
+                width: 50%;
+            }
+
+            .tanque, .tanque2{
+                margin-left: 60%;
+            }
+
+            .tanque3{
+                margin-left: auto;
+                right: 10%;
+            }
+
+
+            .outindex{
+                position: relative;
+                top: 560px;
+            }
+
+            .altomenus{
+                height: 830px !important;
+            }
+        /*END FOOTER STYLING*/
+
+        /*HELPERS*/
+            .onlyMob{
+                display: block !important;
+                position: absolute;
+                top: 0;
+                left: 86px;
+            }
+
+            .justMob{
+                display: block !important;
+            }
+
+            .SlideOut{
+                left: -50px !important;
+            }
+        /*END HELPERS*/
     }
 
     /*TABLET*/
+    /*DONE*/
     @media (min-width: 768px) and (max-width: 991px){
         
         
@@ -2187,6 +2478,10 @@ textarea {
                 height: 1450px !important;
             }
 
+            .leftboxcon p{
+                padding-left: 10px;
+            }
+
             .midboxcon{
                 width: 138px;
             }
@@ -2269,7 +2564,6 @@ textarea {
                 left: -50px !important;
             }
         /*END ANIMATIONS STYLE*/
-        
     }
 
     /*LAPTOPS*/ 
@@ -2579,6 +2873,12 @@ textarea {
 .crystal{
     opacity: 0;
 }
+
+.onlyMob, .justMob{
+    display: none;
+}
+
+
 
 
 /*
