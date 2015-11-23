@@ -1,4 +1,8 @@
 $(document).ready(function(){
+	var b = document.documentElement;
+	b.setAttribute('data-useragent',  navigator.userAgent);
+	b.setAttribute('data-platform', navigator.platform );
+
 	// LINKS
 		$('.gotonoticias').click(function(event) {
 			window.location.href = "noticias.html";
@@ -16,9 +20,11 @@ $(document).ready(function(){
 	// MOB NAV INTERACTION
 		$('#burguerIcon').click(function() {
 			$('#mobNav').toggleClass('extendedNav');
+
+			$('#mobNav ul').toggleClass('showMobNav');
 			setTimeout(function(){
 				$('.mobNavList').toggleClass('hidden');
-			},400);
+			},600);
 		});
 	// END MOB NAV
 

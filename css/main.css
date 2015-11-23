@@ -276,6 +276,10 @@ textarea {
         bottom: -25px;
     }
 
+    html[data-useragent*='MSIE 10.0'] .slogan {
+      bottom: -200px !important;
+    }
+
     .header-menu .dotline{
         margin-top: 55px;
     }
@@ -978,7 +982,7 @@ textarea {
 /* =========== PRODUCTOS ============================== */
         .products-wrapper{
             width: 876px;
-            height: 560px;
+            height: 630px;
             margin-bottom: 30px;
         }
 
@@ -1513,7 +1517,7 @@ textarea {
             }
 
             .productsNavBars:hover{
-                width: 220px !important;
+                width: 240px !important;
                 opacity: 1;
             }
 
@@ -1591,7 +1595,7 @@ textarea {
 
                 .productBar{
                     position: absolute;
-                    width: 205px;
+                    width: 225px;
                     height: 35px;
                     z-index: 10;
                 }
@@ -2040,13 +2044,23 @@ textarea {
         width: 100%;
         height: 100%;
         margin: 0;
+
+        -webkit-transition: all .4s ease-in-out;
+           -moz-transition: all .4s ease-in-out;
+            -ms-transition: all .4s ease-in-out;
+             -o-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+    }
+
+    .showMobNav{
+        margin: 50px 0 0 0 !important;
     }
 
     #mobNav li{
         position: relative;
         width: 100%;
-        height: 14.285%;
-        line-height: 14.285vh;
+        height: 30px;
+        line-height: 30px;
         font-size: 16px;
         text-align: center;
         background-color: #000;
@@ -2069,7 +2083,7 @@ textarea {
     }
 
     .extendedNav{
-        height: 100% !important;
+        height: 260px !important;
     }
 /* ========= END MOBILE MENU ========================================= */
 
@@ -2087,7 +2101,7 @@ textarea {
     }
 
     .showProductsBars{
-        width: 210px !important;
+        width: 230px !important;
     }
 
     .inFront{
@@ -2197,6 +2211,7 @@ textarea {
 
             .rightboxnos{
                 width: 90%;
+                max-width: 312px;
                 margin-right: auto;
                 margin-left: auto;
                 margin-top: -40px;
@@ -2258,11 +2273,16 @@ textarea {
             }
 
             .productsInfoWrapper{
-                width: 90%;
+                width: 95%;
                 left: 0;
-                padding-left: 15px;
+                padding-left: 10px;
                 top: 420px;
             }
+            
+            #newNitratosInfo table{
+                word-break: break-word;
+            }
+
             #bidonesNavWrapper{
                 right: -45px;
                 top: 125px;
@@ -2298,7 +2318,7 @@ textarea {
             }
 
             .showProductsNav{
-                right: 174px !important;
+                right: 194px !important;
             }
 
             .productsNavBars{
@@ -2450,6 +2470,8 @@ textarea {
             .downboxes{
                 position: relative;
                 width: 100%;
+                height: auto;
+                
             }
 
             .destacados, .promos{
@@ -2506,6 +2528,7 @@ textarea {
             .outindex{
                 position: relative;
                 top: 560px;
+                z-index: 1;
             }
 
             .altomenus{
@@ -2529,6 +2552,21 @@ textarea {
                 left: -50px !important;
             }
         /*END HELPERS*/
+    }
+
+
+    @media (max-width: 767px) and (orientation:landscape){
+        .indexWrapper .container{
+            margin-top: 30px;
+        }
+        .inimage img{
+            height: auto;
+            width: 100%;
+        }
+
+        .tagLineWrapper{
+            top: 60px;
+        }
     }
 
     /*TABLET*/
