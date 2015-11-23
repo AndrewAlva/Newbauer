@@ -276,10 +276,6 @@ textarea {
         bottom: -25px;
     }
 
-    html[data-useragent*='MSIE 10.0'] .slogan {
-      bottom: -200px !important;
-    }
-
     .header-menu .dotline{
         margin-top: 55px;
     }
