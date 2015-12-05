@@ -1,27 +1,32 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <title> Newbauer Chemicals | Formación de Distribuidores </title>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> Newbauer Chemicals | Productos </title>
         <link rel="icon" 
         type="image/png" 
         href="favicon.png">
-	    <meta name="description" content="">
-	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-	    <link rel="stylesheet" href="css/normalize.css">
-	    <link rel="stylesheet" href="css/main.css">
-	    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	</head>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-	<body class="dishtml">
-		
-		<div id="fullwrapper">
-            <div id="wrapper">
+        <div id="fullwrapper">
+            <div id="wrapper" class="productWrapper">
             <!-- MENU MOBILE -->
                 <div id="mobNav">
                     <div id="logoMob">
@@ -49,64 +54,162 @@
                 </div>
             <!-- END MENU MOBILE -->
 
-
-            <!-- INICIO HEADER -->
+                <!-- INICIO HEADER -->
                 <div class="header-menu">
                     <ul>
                         <li class="mnbtn"><a href="nosotros.html">nosotros</a></li>
                         <li class="mnbtn"><a href="beneficios.html">beneficios</a></li>
-                        <li class="mnbtn"><a href="productos.php">productos</a></li>
+                        <li class="pressed-menu"><a href="#">productos</a></li>
                         <li class="header-logo"><a href="index.html"><img src="img/newbauer-logo-2.svg"></a></li>
-                        <li class="pressed-menu"><a href="#">distribuidores</a></li>
+                        <li class="mnbtn"><a href="distribuidores.html">distribuidores</a></li>
                         <li class="mnbtn"><a href="noticias.html">noticias</a></li>
                         <li class="mnbtn"><a href="contacto.html">contacto</a></li>
                     </ul>
                     <img class="slogan" src="img/newbauer-slogan-min.svg" alt="Las plantas no comen, beben.">
                     <img class="dotline" src="img/header-line.svg">
                 </div>
-            <!-- FIN HEADER -->
+                <!-- FIN HEADER -->
+
+
 
                 <!-- INICIO BODY -->
                 <div class="container">
-                	<div class="noswrapper">
-    	            	<div id="distribuidores" class="leftboxnos distTitle">
-    	            		<h2>distribuidores</h2>
-    	            		<div class="subtitlenos">
-    	            			<ul>
-    	            				<li id="benclick" class="act">/ formación de distribuidores </li>
-    	            			</ul>
-    	            		</div>
-    	            		<ul id="bencontent" class="benlist">
-                                <p>Únete a nuestro equipo como Distribuidor.
-                                Newbauer Chemical Industries esta buscando individuos y/o empresas que deseen vender nuestros productos en Mexico.
-                                Contamos con un portafolio de productos sobresalientes en su calidad y desempeño.
+                    <div class="products-wrapper">
+                        <?php
+                            $p=$_GET['page'];
 
-                                ¿Que estará disponible para ti como distribuidor?</p>
+                            $page="products/".$p.".php";
 
-                                <li>Atractivos paquetes comerciales. </li>
-                                <li>Capacitación de ventas completa. </li>
-                                <li>Full after sales support, Soporte post-venta. </li>
-                                <li>Soporte Técnico y Servicio al Cliente dedicado. </li>
+                            if (file_exists($page))
+                                include($page);
+                            elseif ($p=="")
+                                include("products/calcium.php");
+                            else
+                                include("products/not.php");
+                        ?>
 
-                                <p>En nuestro programa de distribución buscamos socios que quieran crecer en conjunto y tener resultados redituables para ambas partes.</p>
-                            </ul>
+                    </div>
 
-                           
-    	            	</div>
 
-    	            	<div class="rightboxnos">
-    	            		<img id="pho-beneficios" class="pho-box" src="img/distribuidores.jpg" alt="Distribuidores Newbauer">
-                            
-    	            	</div>
-    	            </div>
+
+                    <div id="productsBurguer" class="justMob">
+                        productos
+                    </div>
+                    
+                    <div id="bidonesNavWrapper">
+                        <div id="newNavCalcium" class="productsNavBars showProductsBars">
+                            <div id="iconCalcium" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=calcium">
+                                    <h3>New Calcium</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavZinc" class="productsNavBars showProductsBars">
+                            <div id="iconZinc" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=zinc">
+                                    <h3>New Zinc</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNav8-24-0" class="productsNavBars showProductsBars">
+                            <div id="icon8-24-0" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=8-24-0">
+                                    <h3>New 8-24-0</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavMKP" class="productsNavBars showProductsBars">
+                            <div id="iconMKP" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=mkp">
+                                    <h3>New MKP</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavUan32" class="productsNavBars showProductsBars">
+                            <div id="iconUan32" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=uan32">
+                                    <h3>New UAN32</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavNS40" class="productsNavBars showProductsBars">
+                            <div id="iconNS40" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=ns40">
+                                    <h3>New NS40</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavMagnesium" class="productsNavBars showProductsBars">
+                            <div id="iconMagnesium" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=magnesium">
+                                    <h3>New Magnesium</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavNitratos" class="productsNavBars showProductsBars">
+                            <div id="iconNitratos" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=nitratos">
+                                    <h3>New Nitratos</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavAmmonium" class="productsNavBars showProductsBars">
+                            <div id="iconAmmonium" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=ammonium">
+                                    <h3>New Ammonium</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="newNavPotasium" class="productsNavBars showProductsBars">
+                            <div id="iconPotasium" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=potasium">
+                                    <h3>New Potasium</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="newNavBrix" class="productsNavBars showProductsBars">
+                            <div id="iconBrix" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=brix">
+                                    <h3>New Brix</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="newNavBlueba" class="productsNavBars showProductsBars">
+                            <div id="iconBlueba" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=blueba">
+                                    <h3>New BlueBerryAmmonia</h3>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="newNavCalciumBoro" class="productsNavBars showProductsBars">
+                            <div id="iconCalciumBoro" class="productBlock"></div>
+                            <div class="productBar">
+                                <a href="productos.php?page=calciumb">
+                                    <h3>New CalciumBoro</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-    			
-
-
-
                 <!-- FIN BODY -->
 
-				
+
 
                 <!-- INICIO FOOTER -->
                 <footer >
@@ -207,6 +310,7 @@
                     </div>
                     <div class="barrafinal">
                         newbauer / Carretera Sahuayo-Colima Km.102.86, Zona Industrial Crucero de Villa, Zapotiltic, Jalisco. C.P.49600 / tel. 33 33 33 33
+ 
                     </div>
                     
                     <div class="footprint">
@@ -231,17 +335,15 @@
                             </a>
                         </div>
                     </div> 
-
                 </footer>
                 <!-- FIN FOOTER -->
 
 
 
             </div>
-
         </div>
 
-				
+
 
 
 
@@ -261,6 +363,5 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
-
-	</body>
+    </body>
 </html>

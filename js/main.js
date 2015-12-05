@@ -6,7 +6,17 @@ $(document).ready(function(){
 		});
 
 		$('.gotoproducts').click(function(event) {
-			window.location.href = "productos.html";
+			window.location.href = "productos.php";
+		});
+
+		$('.gotoBrix').click(function(event) {
+			window.location.href = "productos.php?page=brix";
+		});
+		$('.gotoZinc').click(function(event) {
+			window.location.href = "productos.php?page=zinc";
+		});
+		$('.gotoNS40').click(function(event) {
+			window.location.href = "productos.php?page=ns40";
 		});
 
 		$('#linkDistribuidores').click(function() {
@@ -646,6 +656,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=calcium"
 		});
 
 		$('#newNavZinc').click(function() {
@@ -704,6 +715,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=zinc"
 		});
 
 		$('#newNav8-24-0').click(function() {
@@ -762,6 +774,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=8-24-0"
 		});
 
 		$('#newNavMKP').click(function() {
@@ -820,6 +833,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=mkp"
 		});
 
 		$('#newNavUan32').click(function() {
@@ -878,6 +892,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=uan32"
 		});
 
 		$('#newNavNS40').click(function() {
@@ -936,6 +951,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=ns40"
 		});
 
 		$('#newNavMagnesium').click(function() {
@@ -994,6 +1010,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=magnesium"
 		});
 
 		$('#newNavNitratos').click(function() {
@@ -1052,6 +1069,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=nitratos"
 		});
 
 		$('#newNavAmmonium').click(function() {
@@ -1110,6 +1128,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=ammonium"
 		});
 
 		$('#newNavPotasium').click(function() {
@@ -1168,6 +1187,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=potasium"
 		});
 
 		
@@ -1229,6 +1249,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').addClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=brix"
 		});
 
 		$('#newNavBlueba').click(function(event) {
@@ -1287,6 +1308,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').addClass('inFront');
 			$('#newCalciumBoroInfo').removeClass('inFront');
+			window.location.href="productos.php?page=blueba"
 		});
 
 		$('#newNavCalciumBoro').click(function(event) {
@@ -1345,6 +1367,7 @@ $(document).ready(function(){
 			$('#newBrixInfo').removeClass('inFront');
 			$('#newBluebaInfo').removeClass('inFront');
 			$('#newCalciumBoroInfo').addClass('inFront');
+			window.location.href="productos.php?page=calciumb"
 		});
 	//////////////////////////////// END PRODUCTOS NUEVO ////////////////////////////////
 

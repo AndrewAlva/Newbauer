@@ -806,6 +806,10 @@ textarea {
         margin-bottom: 30px;
     }
 
+    .gotoproducts, .gotoZinc, .gotoBrix, .gotoNS40 {
+        cursor: pointer;
+    }
+
     .mid-box-text{
         width: 140px;
         height: 100%;
@@ -980,6 +984,12 @@ textarea {
             width: 876px;
             height: 630px;
             margin-bottom: 30px;
+        }
+
+        #errorWrapper{
+            position: absolute;
+            
+            margin-top: 200px;
         }
 
         .col-products{
@@ -1410,6 +1420,10 @@ textarea {
                         color: #fff;
                     }
 
+                        .productsDescription table {
+                            color: #fff;
+                        }
+
                         .productsDescription table, .productsDescription td {
                             border: 1px solid #8ec44b;
                         }
@@ -1594,6 +1608,10 @@ textarea {
                     width: 225px;
                     height: 35px;
                     z-index: 10;
+                }
+
+                .productBar a{
+                    text-decoration: none;
                 }
 
                 /*INIT BG PER BAR*/
