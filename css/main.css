@@ -218,6 +218,7 @@ textarea {
         background: -webkit-linear-gradient(top,  #494a4b 0%,#494a4b 28%,#313233 49%,#161414 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to bottom,  #494a4b 0%,#494a4b 28%,#313233 49%,#161414 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494a4b', endColorstr='#161414',GradientType=0 ); /* IE6-9 */
+        
     }
 
     .header-menu a{
@@ -227,7 +228,7 @@ textarea {
     }
 
     .mnbtn:hover {
-        background-image: url(../img/pressed-menu.svg);
+        background-image: url(../img/pressed-menu.png);
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -262,7 +263,7 @@ textarea {
     }
 
     .pressed-menu{
-        background-image: url(../img/pressed-menu.svg);
+        background-image: url(../img/pressed-menu.png);
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -273,11 +274,11 @@ textarea {
         height: 23px;
         margin: auto;
         left: 0; right: 0;
-        bottom: -25px;
+        top: 185px;
     }
 
     .header-menu .dotline{
-        margin-top: 55px;
+        margin-top: 60px;
     }
 
     .dotline{
@@ -332,7 +333,7 @@ textarea {
 
     .line1{
         width: 150px;
-        background-image: url(../img/line1-bg.svg);
+        background-image: url(../img/line1-bg.png);
         color: #fff;
     }
 
@@ -408,7 +409,7 @@ textarea {
         position: relative;
         width: 95px;
         height: 14px;
-        background-image: url(../img/switch-bg.svg);
+        background-image: url(../img/switch-bg.png);
         float: right;
         padding-left: 10px;
         margin-top: -23px;
@@ -643,6 +644,8 @@ textarea {
             left: 0;
             font-size: 22px;
             opacity: .5;
+            filter: alpha(opacity=50) !important;
+
 
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
@@ -663,6 +666,7 @@ textarea {
             right: 0;
             font-size: 22px;
             opacity: .5;
+            filter: alpha(opacity=50) !important;
 
             -webkit-transition: all .4s ease-in-out;
                -moz-transition: all .4s ease-in-out;
@@ -675,6 +679,7 @@ textarea {
 
         .dis-right:hover, .dis-left:hover{
             opacity: 1;
+            filter: alpha(opacity=100) !important;
         }
     /* =========== END DISTRIBUCIÓN ============================== */
 /* =========== END BENEFICIOS ============================== */
@@ -731,7 +736,7 @@ textarea {
         position: relative;
         width: 280px;
         height: 26px;
-        background-image: url(../img/subtitle-bg.svg);
+        background-image: url(../img/subtitle-bg.png);
         color: #fff;
         text-transform: uppercase;
         padding-left: 15px;
@@ -747,14 +752,17 @@ textarea {
 
     .suboutindex{
         opacity: 0.4;
+        filter: alpha(opacity=40) !important;
     }
 
     .suboutindex:hover{
         opacity: 1;
+        filter: alpha(opacity=100) !important;
     }
 
     .swift{
         opacity: 0.4;
+        filter: alpha(opacity=40) !important;
     }
 
     .downboxes h5{
@@ -888,10 +896,12 @@ textarea {
         height: 28px;
         overflow: hidden;
         opacity: 0.4;
+        filter: alpha(opacity=40) !important;
     }
 
     .news-on-news:hover{
         opacity: 1;
+        filter: alpha(opacity=100) !important;
     }
 
     /*.downwrapper on news*/
@@ -940,13 +950,14 @@ textarea {
 
     .noticia p{
         position: absolute;
-        width: 289px;
-        height: 370px;
-        overflow: scroll;
+        width: 90%;
+        height: 360px;
+        overflow-y: scroll;
         font-size: 12px;
         text-align: justify;
         color: #fff;
         margin-top: 135px;
+        padding: 0 10% 0 0;
 
     }
 
@@ -1175,7 +1186,7 @@ textarea {
             top: 835px;
             left: 0;
             right: 0;
-            background-image: url(../img/subtitle-bg.svg);
+            background-image: url(../img/subtitle-bg.png);
             -webkit-transition: top 0.8s; /* Safari */
             transition: top 0.8s;
             transition-timing-function: ease;
@@ -1217,6 +1228,7 @@ textarea {
                 overflow: hidden;
                 left: 0px;
                 opacity: 1;
+                filter: alpha(opacity=100) !important;
 
                 -webkit-transition: all 1s ease;
                 -o-transition: all 1s ease;
@@ -1298,6 +1310,7 @@ textarea {
                 -ms-background-position-y: -70px;
                 background-position-y: -70px;
                 opacity: 0.7;
+                filter: alpha(opacity=70) !important;
             }
 
         #bidonesInfoWrapper{
@@ -1312,6 +1325,7 @@ textarea {
                 height: 100%;
                 left: 0px;
                 opacity: 1;
+                filter: alpha(opacity=100) !important;
 
                 -webkit-transition: all 1s ease;
                 -o-transition: all 1s ease;
@@ -1520,6 +1534,7 @@ textarea {
                 overflow: hidden;
                 cursor: pointer;
                 opacity: .8;
+                filter: alpha(opacity=80) !important;
 
                 -webkit-transition: all 0.4s ease;
                 -o-transition: all 0.4s ease;
@@ -1529,6 +1544,7 @@ textarea {
             .productsNavBars:hover{
                 width: 240px !important;
                 opacity: 1;
+                filter: alpha(opacity=100) !important;
             }
 
                 .productBlock{
@@ -1682,15 +1698,15 @@ textarea {
                     }
 
                 .productWrapper .outindex{
-                    top: 870px;
+                    top: 900px;
                 }
 
                 .productWrapper .barrafinal{
-                    top: 905px;
+                    top: 935px;
                 }
 
                 .productWrapper .footprint{
-                    top: 935px;
+                    top: 965px;
                 }
 /* ========== END PRODUCTOS NEW DESIGN ============================= */
 
@@ -1760,12 +1776,7 @@ textarea {
         position: absolute;
         height: 100%;
         margin: auto;
-        left: 50%;
-        -webkit-transform: translate(-50%,0);
-           -moz-transform: translate(-50%,0);
-            -ms-transform: translate(-50%,0);
-             -o-transform: translate(-50%,0);
-                transform: translate(-50%,0);
+        right: 0;
     }
 
 
@@ -1880,6 +1891,7 @@ textarea {
 
     .swift:hover{
         opacity: 1;
+        filter: alpha(opacity=100) !important;
         color: #8ec44b;
     }
 
@@ -1897,7 +1909,7 @@ textarea {
         top: 745px;
         left: 0;
         right: 0;
-        background-image: url(../img/subtitle-bg.svg);
+        background-image: url(../img/subtitle-bg.png);
         -webkit-transition: top 0.8s; /* Safari */
         transition: top 0.8s;
         transition-timing-function: ease;
@@ -1956,6 +1968,7 @@ textarea {
         margin: auto;
         left: 0; right: 0;
         opacity: .5;
+        filter: alpha(opacity=50) !important;
 
         -webkit-transition: all .4s ease-in-out;
            -moz-transition: all .4s ease-in-out;
@@ -1966,6 +1979,7 @@ textarea {
 
     .iconsBox img:hover{
         opacity: .8;
+        filter: alpha(opacity=80) !important;
     }
 
     .fpoutindex{
@@ -2111,6 +2125,7 @@ textarea {
     
     .SlideOut{
         opacity: 0;
+        filter: alpha(opacity=0) !important;
         left: 50px !important;
     }
 
@@ -2139,6 +2154,7 @@ textarea {
             visibility: hidden !important;
             z-index: -1 !important;
             opacity: 0 !important;
+            filter: alpha(opacity=0) !important;
         }
 
         /*MOBILE NAV*/
@@ -2337,6 +2353,7 @@ textarea {
 
             .productsNavBars{
                 opacity: 1;
+                filter: alpha(opacity=100) !important;
             }
 
             .productsNavBars:hover{
@@ -2396,8 +2413,8 @@ textarea {
             }
 
             .noticia p{
-                width: 90%;
-                padding: 0 15px;
+                width: 70%;
+                padding: 0 15%;
             }
 
             .rightbox-news{
@@ -2735,7 +2752,8 @@ textarea {
             }
 
             .noticia p{
-                width: 100%;
+                width: 85%;
+                padding: 0 15% 0 0;
             }
         /*END NOTICIAS STYLE*/
 
@@ -2978,7 +2996,7 @@ textarea {
             }
 
             .noticia h2, .noticia p{
-                width: 100%;
+                width: 90%;
             }
         /* END NOTICIAS STYLE */
 
@@ -3003,12 +3021,7 @@ textarea {
                 position: absolute;
                 height: 100%;
                 margin: auto;
-                left: 50%;
-                -webkit-transform: translate(-50%,0);
-                   -moz-transform: translate(-50%,0);
-                    -ms-transform: translate(-50%,0);
-                     -o-transform: translate(-50%,0);
-                        transform: translate(-50%,0);
+                right: 0;
             }
 
             .rightboxcon{
@@ -3142,6 +3155,7 @@ textarea {
 
 .crystal{
     opacity: 0;
+    filter: alpha(opacity=0) !important;
 }
 
 .onlyMob, .justMob{
