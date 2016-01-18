@@ -2082,6 +2082,7 @@ textarea {
 
     .showMobNav{
         margin: 50px 0 0 0 !important;
+        height: 210px !important;
     }
 
     #mobNav li{
@@ -2163,9 +2164,11 @@ textarea {
             }
 
             .slogan{
+                position: relative;
                 width: 230px;
                 bottom: -21px;
                 right: 100%;
+                top: 1px;
             }
         /*END MOBILE NAV*/
 
