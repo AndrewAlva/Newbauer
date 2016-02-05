@@ -1,14 +1,14 @@
 <?php 
 
-	$mail_to = 'andrew@luckyme.mx';
+	$recipient = 'ventas@newbauerchemicals.com, andrew@luckyme.mx';
 
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
 	$message = $_POST['message'];
-	$formcontent="From: $name \n Message: $message";
-	$recipient = "alexconh@hotmail.com";
-	$subject = "Contact Form";
+	$formcontent="De: $name \n Mensaje: $message";
+	
+	$subject = "Mensaje desde newbauerchemicals.com";
 	$mailheader = "From: $email \r\n";
 	$mail_sent = mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 	
